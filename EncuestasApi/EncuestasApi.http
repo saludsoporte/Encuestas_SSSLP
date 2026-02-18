@@ -1,0 +1,6 @@
+@EncuestasApi_HostAddress = http://localhost:5009
+
+GET {{EncuestasApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

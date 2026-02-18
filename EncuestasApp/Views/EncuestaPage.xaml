@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EncuestaApp.Views.EncuestaPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:dataForm="clr-namespace:Syncfusion.Maui.DataForm;assembly=Syncfusion.Maui.DataForm" 
+             xmlns:behaviors="clr-namespace:EncuestasApp.Behaviors"
+             xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+             Padding="0,0,0,0">
+    <ContentPage.Resources>
+        <Style x:Key="InvalidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Red" />
+        </Style>
+        <Style x:Key="ValidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Green" />
+        </Style>
+    </ContentPage.Resources>
+    <NavigationPage.TitleView>
+    <StackLayout Padding="5,5,0,0">
+        <!--<Grid >
+
+                <Image HorizontalOptions="Start" Source="franja2.png"  Aspect="AspectFill" HeightRequest="40"  />
+            </Grid>-->
+        <Label Text="HISTORIA CLÍNICA DOMICILIARIA - BRIGADA DE SALUD" FontAttributes="Bold" FontSize="18"/>
+
+    </StackLayout>
+    </NavigationPage.TitleView>
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="15">
+                <Label Text="1. Datos Generales del Paciente" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+                <!-->DATOS DE LA PERSONA<-->
+                <Label Text="CURP *"/>
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="5">
+                    <Entry x:Name="CurpEntry" Placeholder="CURP" TextTransform="Uppercase" TextChanged="CurpEntry_TextChanged">
+                        <Entry.Behaviors>
+                            <behaviors:BloquearEmojisBehavior />
+                            <toolkit:MultiValidationBehavior InvalidStyle="{StaticResource InvalidEntryStyle}"  ValidStyle="{StaticResource ValidEntryStyle}" Flags="ValidateOnValueChanged">
+                                <toolkit:CharactersValidationBehavior x:Name="UpperValidation2" CharacterType="UppercaseLetter" toolkit:MultiValidationBehavior.Error="Deben ser mayusculas" RegexPattern="" />
+                                <toolkit:CharactersValidationBehavior x:Name="CURPAnyValidation" CharacterType="Any" MinimumCharacterTypeCount="18" toolkit:MultiValidationBehavior.Error="18 caracteres" RegexPattern="([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$" />
+                            </toolkit:MultiValidationBehavior>
+                        </Entry.Behaviors>
+                    </Entry>
+                    <Button x:Name="GenerarCurpButton"
+            Grid.Column="1"
+            WidthRequest="40"
+            HeightRequest="40"
+            BackgroundColor="#055A1C"
+            CornerRadius="20"
+            IsVisible="False"
+            Opacity="0"
+            Scale="0.8"
+            Clicked="OnGenerarCurpClicked">
+
+                        <Button.ImageSource>
+                            <FontImageSource
+                FontFamily="MaterialIcons"
+                Glyph="&#xe663;"  
+                            Size="22"
+                Color="White"/>
+                        </Button.ImageSource>
+
+                    </Button>
+
+                </Grid>
+                <Label Text="Nombre(s) *"/>
+
+                <Entry x:Name="NombreEntry" Placeholder="Nombre completo " TextTransform="Uppercase"  TextChanged="NombreEntry_TextChanged">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior InvalidStyle="{StaticResource InvalidEntryStyle}" ValidStyle="{StaticResource ValidEntryStyle}" Flags="ValidateOnValueChanged">
+                            <toolkit:CharactersValidationBehavior x:Name="UpperValidation" CharacterType="UppercaseLetter" toolkit:MultiValidationBehavior.Error="Nombre completo deben ser mayusculas" RegexPattern="" />
+                            <toolkit:CharactersValidationBehavior x:Name="AnyValidation" CharacterType="Any" MinimumCharacterTypeCount="2" toolkit:MultiValidationBehavior.Error="Nombre completo debe ser mayor a 2 caracteres" RegexPattern="^[A-ZÁÉÍÓÚÑ\s]+$" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Primer Apellido *"/>
+
+                <Entry x:Name="pApellidoEntry" Placeholder="Primer Apellido" TextTransform="Uppercase" TextChanged="NombreEntry_TextChanged">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior InvalidStyle="{StaticResource InvalidEntryStyle}" ValidStyle="{StaticResource ValidEntryStyle}" Flags="ValidateOnValueChanged">
+                            <toolkit:CharactersValidationBehavior CharacterType="UppercaseLetter" toolkit:MultiValidationBehavior.Error="Debe contener solo mayúsculas" />
+                            <toolkit:CharactersValidationBehavior CharacterType="Any" MinimumCharacterTypeCount="2" toolkit:MultiValidationBehavior.Error="Debe tener al menos 2 caracteres" RegexPattern="^[A-ZÁÉÍÓÚÑ\s]+$" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Segundo Apellido *"/>
+
+                <Entry x:Name="sApellidoEntry" Placeholder="Segundo Apellido" TextTransform="Uppercase" TextChanged="NombreEntry_TextChanged">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior InvalidStyle="{StaticResource InvalidEntryStyle}" ValidStyle="{StaticResource ValidEntryStyle}" Flags="ValidateOnValueChanged">
+                            <toolkit:CharactersValidationBehavior CharacterType="UppercaseLetter" toolkit:MultiValidationBehavior.Error="Debe contener solo mayúsculas" />
+                            <toolkit:CharactersValidationBehavior CharacterType="Any" MinimumCharacterTypeCount="2" toolkit:MultiValidationBehavior.Error="Debe tener al menos 2 caracteres" RegexPattern="^[A-ZÁÉÍÓÚÑ\s]+$" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Género *"/>
+
+                <Picker x:Name="GeneroPicker" Title="Selecciona una opción"   SelectedIndexChanged="OnEventIndexChangedGeneroPicker">
+                    <Picker.Items>
+                        <x:String>Masculino</x:String>
+                        <x:String>Femenino</x:String>
+                        <x:String>No binario</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Fecha de nacimiento"/>
+                <DatePicker x:Name="FechaNacimientoEntry" DateSelected="FechaNacimientoEntry_DateSelected"/>
+                <Label Text="Edad"/>
+                <Entry x:Name="EdadEntry" Placeholder="Edad" IsReadOnly="True">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+                <Label Text="Entidad de Nacimiento *"/>
+
+                <Picker x:Name="EntidadPicker" Title="Selecciona una opción" SelectedIndexChanged="EntidadPicker_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>AGUASCALIENTES</x:String>
+                        <x:String>BAJA CALIFORNIA</x:String>
+                        <x:String>BAJA CALIFORNIA SUR</x:String>
+                        <x:String>CAMPECHE</x:String>
+                        <x:String>COAHUILA</x:String>
+                        <x:String>COLIMA</x:String>
+                        <x:String>CHIAPAS</x:String>
+                        <x:String>CHIHUAHUA</x:String>
+                        <x:String>CIUDAD DE MEXICO</x:String>
+                        <x:String>DURANGO</x:String>
+                        <x:String>GUANAJUATO</x:String>
+                        <x:String>GUERRERO</x:String>
+                        <x:String>HIDALGO</x:String>
+                        <x:String>JALISCO</x:String>
+                        <x:String>MEXICO</x:String>
+                        <x:String>MICHOACAN</x:String>
+                        <x:String>MORELOS</x:String>
+                        <x:String>NAYARIT</x:String>
+                        <x:String>NUEVO LEON</x:String>
+                        <x:String>OAXACA</x:String>
+                        <x:String>PUEBLA</x:String>
+                        <x:String>QUERETARO</x:String>
+                        <x:String>QUINTANA ROO</x:String>
+                        <x:String>SAN LUIS POTOSI</x:String>
+                        <x:String>SINALOA</x:String>
+                        <x:String>SONORA</x:String>
+                        <x:String>TABASCO</x:String>
+                        <x:String>TAMAULIPAS</x:String>
+                        <x:String>TLAXCALA</x:String>
+                        <x:String>VERACRUZ</x:String>
+                        <x:String>YUCATAN</x:String>
+                        <x:String>ZACATECAS</x:String>
+                        <x:String>NACIONAL</x:String>
+                        <x:String>EXTRANJERO</x:String>
+                    </Picker.Items>
+                </Picker>
+
+
+                <!-->FIN DATOS DE LA PERSONA<-->
+
+                <!-->DATOS DOMICILIO<-->
+                <Label Text="Código Postal *"/>
+                <Entry x:Name="CodigoPostalEntry"
+       Placeholder="Código Postal"
+       Keyboard="Numeric"
+                  
+       TextChanged="OnCodigoPostalChanged">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+            InvalidStyle="{StaticResource InvalidEntryStyle}"  
+            ValidStyle="{StaticResource ValidEntryStyle}"
+            Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+                x:Name="CodigoPostalAnyValidation" 
+                CharacterType="Any" 
+                MinimumCharacterTypeCount="5" 
+                MaximumCharacterTypeCount="5"
+                toolkit:MultiValidationBehavior.Error="5 caracteres" 
+                RegexPattern="^[0-9]+$" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+
+
+
+
+                <Label Text="Municipio *"/>
+                <Picker x:Name="MunicipioPicker"
+        Title="Seleccione municipio"
+        ItemDisplayBinding="{Binding Municipio}"
+        SelectedIndexChanged="OnMunicipioChanged" />
+                <Label Text="Localidad *"/>
+                <!--<Picker x:Name="LocalidadPicker"
+        Title="Seleccione localidad"
+        SelectedIndexChanged="OnLocalidadChanged"/>-->
+
+                <Entry x:Name="LocalidadSelectorEntry"
+       Placeholder="Seleccione localidad"
+       IsReadOnly="True">
+                    <Entry.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AbrirBuscadorLocalidad" />
+                    </Entry.GestureRecognizers>
+                </Entry>
+
+
+                <Label Text="Colonia *"/>
+
+                <Entry x:Name="ColoniaSelectorEntry"
+       Placeholder="Seleccione colonia"
+       IsReadOnly="True">
+                    <Entry.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AbrirColoniaPopup"/>
+                    </Entry.GestureRecognizers>
+                </Entry>
+
+
+                <HorizontalStackLayout Spacing="10">
+                    <CheckBox x:Name="ColoniaNoEncontradaCheck"
+              CheckedChanged="OnColoniaNoEncontradaChanged" />
+                    <Label Text="No encuentro mi colonia"
+           VerticalTextAlignment="Center" />
+                </HorizontalStackLayout>
+
+                <Entry x:Name="ColoniaManualEntry"
+       Placeholder="Escriba su colonia"
+       IsVisible="False">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="Calle *"/>
+                <Entry x:Name="CallenEntry" Placeholder="Calle *">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+                <Label Text="No. Exterior *"/>
+                <Entry x:Name="NumExteriorEntry" Placeholder="Número exterior *" Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+         InvalidStyle="{StaticResource InvalidEntryStyle}"  
+         ValidStyle="{StaticResource ValidEntryStyle}"
+         Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+             x:Name="NumExteriorAnyValidation" 
+             CharacterType="Any" 
+             RegexPattern="^[0-9]+$" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="No. Interior"/>
+                <Entry x:Name="NumInteriorEntry" Placeholder="Número interior">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+                <Label Text="Sección Electoral *"/>
+                <Picker x:Name="SeccionPicker"
+            Title="Seleccione sección electoral *"
+            Focused="OnSeccionFocused"/>
+                <HorizontalStackLayout Spacing="10">
+                    <CheckBox x:Name="SeccionNoEncontradaCheck"
+              CheckedChanged="OnSeccionNoEncontradaChanged" />
+                    <Label Text="No encuentro mi sección"
+           VerticalTextAlignment="Center" />
+                </HorizontalStackLayout>
+
+                <Entry x:Name="SeccionManualEntry"
+       Placeholder="Sección electoral 0001 *"
+       Keyboard="Numeric"
+       IsVisible="False">
+
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+
+                        <toolkit:MultiValidationBehavior
+            Flags="ValidateOnValueChanged"
+            ValidStyle="{StaticResource ValidEntryStyle}"
+            InvalidStyle="{StaticResource InvalidEntryStyle}">
+
+
+                            <toolkit:NumericValidationBehavior
+                Flags="ValidateOnValueChanged"
+                MinimumValue="1"
+                MaximumValue="9999"
+                MaximumDecimalPlaces="0" />
+
+                            <toolkit:CharactersValidationBehavior
+                CharacterType="Digit"
+                MinimumCharacterTypeCount="4"
+                MaximumCharacterTypeCount="4"
+                toolkit:MultiValidationBehavior.Error="Debe contener exactamente 4 dígitos" />
+
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Teléfono *"/>
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                    <Entry x:Name="TelefonoEntry" Grid.Column="0" Placeholder="Teléfono" Keyboard="Numeric" TextChanged="TelefonoEntry_TextChanged">
+                        <Entry.Behaviors>
+                            <behaviors:BloquearEmojisBehavior />
+                            <toolkit:MultiValidationBehavior 
+                    InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                    ValidStyle="{StaticResource ValidEntryStyle}"
+                    Flags="ValidateOnValueChanged">
+
+                                <toolkit:CharactersValidationBehavior 
+                        x:Name="TelefonoEntryAnyValidation" 
+                        CharacterType="Any" 
+                        MinimumCharacterTypeCount="10" 
+                        MaximumCharacterTypeCount="10"
+                        
+                        toolkit:MultiValidationBehavior.Error="10 caracteres" 
+                        RegexPattern="^[0-9]+$" />
+                            </toolkit:MultiValidationBehavior>
+                        </Entry.Behaviors>
+                    </Entry>
+                    <HorizontalStackLayout Grid.Column="1" Spacing="5" VerticalOptions="Center">
+                        <CheckBox x:Name="NoTelefonoCheck" CheckedChanged="NoTelefonoCheck_CheckedChanged"/>
+                        <Label Text="No tiene" VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Grid>
+                <Label Text="Celular *"/>
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                    <Entry x:Name="CelularEntry" Grid.Column="0" Placeholder="Celular" Keyboard="Numeric" TextChanged="CelularEntry_TextChanged">
+                        <Entry.Behaviors>
+                            <behaviors:BloquearEmojisBehavior />
+                            <toolkit:MultiValidationBehavior 
+                    InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                    ValidStyle="{StaticResource ValidEntryStyle}"
+                    Flags="ValidateOnValueChanged">
+
+                                <toolkit:CharactersValidationBehavior 
+                        x:Name="CelularAnyValidation"
+                        CharacterType="Any" 
+                        MinimumCharacterTypeCount="10" 
+                        MaximumCharacterTypeCount="10"
+                        
+                        toolkit:MultiValidationBehavior.Error="10 caracteres" 
+                        RegexPattern="^[0-9]+$" />
+                            </toolkit:MultiValidationBehavior>
+                        </Entry.Behaviors>
+                    </Entry>
+                    <HorizontalStackLayout Grid.Column="1" Spacing="5" VerticalOptions="Center">
+                        <CheckBox x:Name="NoCelularCheck" CheckedChanged="NoCelularCheck_CheckedChanged"/>
+                        <Label Text="No tiene" VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Grid>
+
+
+
+                <Label Text="Estado civil *"/>
+                <Picker x:Name="EstadoCivilPicker" Title="Selecciona una opción"  >
+                    <Picker.Items>
+                        <x:String>Soltero/a</x:String>
+                        <x:String>Casado/a</x:String>
+                        <x:String>Unión libre</x:String>
+                        <x:String>Viudo/a</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Ocupación *"/>
+                <Entry x:Name="OcupacionEntry" Placeholder="Ocupación" TextTransform="Uppercase" TextChanged="OcupacionEntry_TextChanged">
+
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                          InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                          ValidStyle="{StaticResource ValidEntryStyle}"
+                          Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+                          x:Name="OcupacionEntryUpperValidation" 
+                          CharacterType="UppercaseLetter" 
+                          toolkit:MultiValidationBehavior.Error="Ocupación deben ser mayusculas" 
+                          RegexPattern="" />
+
+
+                            <toolkit:CharactersValidationBehavior 
+                       x:Name="OcupacionEntry_AnyValidation" 
+                       CharacterType="Any" 
+                       MinimumCharacterTypeCount="2" 
+                       toolkit:MultiValidationBehavior.Error="Ocupación debe ser mayor a 2 caracteres" 
+                        />
+                        </toolkit:MultiValidationBehavior>
+
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="¿Pertenece a algún pueblo indígena? *"/>
+                <Picker x:Name="PuebloIndigenaPicker" Title="Selecciona una opción" SelectedIndexChanged="OnEventIndexChangedPuebloIndigenaPicker">
+                    <Picker.Items>
+                        <x:String>No</x:String>
+                        <x:String>Sí</x:String>
+                    </Picker.Items>
+                </Picker>
+
+
+
+                <Entry x:Name="CualPuebloIndigenaEntry" IsVisible="false" Placeholder="(En caso de ser sí) ¿Cuál?" TextChanged="CualPuebloIndigenaEntry_TextChanged">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+              InvalidStyle="{StaticResource InvalidEntryStyle}"  
+              ValidStyle="{StaticResource ValidEntryStyle}"
+              Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+              x:Name="CualPuebloIndigenaEntryUpperValidation" 
+              CharacterType="UppercaseLetter" 
+              toolkit:MultiValidationBehavior.Error="Cuál pueblo indígena deben ser mayusculas" 
+              RegexPattern="" />
+
+
+                            <toolkit:CharactersValidationBehavior 
+           x:Name="CualPuebloIndigenaEntry_AnyValidation" 
+           CharacterType="Any" 
+           MinimumCharacterTypeCount="2" 
+           toolkit:MultiValidationBehavior.Error="Cuál pueblo indígena debe ser mayor a 2 caracteres" 
+            />
+                        </toolkit:MultiValidationBehavior>
+
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="¿Habla algún idioma indígena? *"/>
+                <Picker x:Name="IdiomaIndigenaPicker" Title="Selecciona una opción" SelectedIndexChanged="OnEventIndexChangedIdiomaIndigenaPicker">
+                    <Picker.Items>
+                        <x:String>No</x:String>
+                        <x:String>Sí</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="CualIdiomaIndigenaEntry" IsVisible="false"  Placeholder="(En caso de ser sí) ¿Cuál?"  TextChanged="CualIdiomaIndigenaEntry_TextChanged" >
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                            InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                            ValidStyle="{StaticResource ValidEntryStyle}"
+                            Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+                            x:Name="CualIdiomaIndigenaEntryUpperValidation" 
+                            CharacterType="UppercaseLetter" 
+                            toolkit:MultiValidationBehavior.Error="Cuál idioma indígena deben ser mayusculas" 
+                            RegexPattern="" />
+
+
+                            <toolkit:CharactersValidationBehavior 
+                            x:Name="CualIdiomaIndigenaEntry_AnyValidation" 
+                            CharacterType="Any" 
+                            MinimumCharacterTypeCount="2" 
+                            toolkit:MultiValidationBehavior.Error="Cuál idioma indígena debe ser mayor a 2 caracteres" 
+                            />
+                        </toolkit:MultiValidationBehavior>
+
+                    </Entry.Behaviors>
+                </Entry>
+                <Label Text="Acompañante o familiar responsable *"/>
+                <Entry x:Name="AcompananteEntry" Placeholder="Acompañante o familiar responsable" TextTransform="Uppercase" TextChanged="AcompananteEntry_TextChanged">
+
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                          InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                          ValidStyle="{StaticResource ValidEntryStyle}"
+                          Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+                          x:Name="AcompananteEntry2UpperValidation" 
+                          CharacterType="UppercaseLetter" 
+                          toolkit:MultiValidationBehavior.Error="Nombre completo deben ser mayusculas" 
+                          RegexPattern="" />
+
+
+                            <toolkit:CharactersValidationBehavior 
+                       x:Name="AcompananteEntryAnyValidation" 
+                       CharacterType="Any" 
+                       MinimumCharacterTypeCount="3" 
+                       toolkit:MultiValidationBehavior.Error="Nombre completo debe ser mayor a 3 caracteres" 
+                       RegexPattern="^[A-ZÁÉÍÓÚÑ\s]+$" />
+                        </toolkit:MultiValidationBehavior>
+
+                    </Entry.Behaviors>
+                </Entry>
+
+
+
+
+
+                <Label Text="Relación acompañante o familiar responsable *"/>
+
+                <Picker x:Name="RelacionAcompanantePicker"
+        Title="Seleccione relación">
+
+                    <Picker.Items>
+                        <x:String>Padre</x:String>
+                        <x:String>Madre</x:String>
+                        <x:String>Hijo a</x:String>
+                        <x:String>Cuidador particular</x:String>
+                        <x:String>Sin parentesco</x:String>
+                    </Picker.Items>
+
+                </Picker>
+                <Label Text="Teléfono acompañante o familiar responsable *"/>
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                    <Entry x:Name="TelefonoAcompananteEntry" Grid.Column="0" Placeholder="Celular" Keyboard="Numeric">
+                        <Entry.Behaviors>
+                            <behaviors:BloquearEmojisBehavior />
+                            <toolkit:MultiValidationBehavior 
+                         InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                         ValidStyle="{StaticResource ValidEntryStyle}"
+                         Flags="ValidateOnValueChanged">
+
+                                <toolkit:CharactersValidationBehavior 
+                             x:Name="TelefonoAcompananteEntryAnyValidation" 
+                             CharacterType="Any" 
+                             MinimumCharacterTypeCount="10" 
+                             MaximumCharacterTypeCount="10"
+             
+                             toolkit:MultiValidationBehavior.Error="Teléfono debe ser de 10 caracteres" 
+                             RegexPattern="^[0-9]+$" />
+                            </toolkit:MultiValidationBehavior>
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <HorizontalStackLayout Grid.Column="1" Spacing="5" VerticalOptions="Center">
+                        <CheckBox x:Name="NoTelAcompCheck" CheckedChanged="NoTelAcompCheck_CheckedChanged"/>
+                        <Label Text="No tiene" VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+                </Grid>
+
+
+
+
+                <Label Text="2. Antecedentes Personales" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="HipertensionCheckBox" />
+                    <Label Text="Hipertensión Arterial" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="DiabetesCheckBox" />
+                    <Label Text="Diabetes Mellitus" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="ObesidadCheckBox" />
+                    <Label Text="Obesidad" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="EnfermedadCerdiovascularCheckBox" />
+                    <Label Text="Enfermedad cardiovascular" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="DislipidemiaCheckBox" />
+                    <Label Text="Dislipidemia (Colesterol/Trigliceridos)" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AsmaCheckBox" />
+                    <Label Text="Asma/EPOC" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="TuberculosisCheckBox" />
+                    <Label Text="Tuberculosis" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="EpilepsiaCheckBox" />
+                    <Label Text="Epilepsia" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="CancerCheckBox" CheckedChanged="OnCheckBoxCheckedChangedCancerCheckBox" />
+                    <Label Text="Cáncer" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Entry x:Name="EspecificaCancerEntry" IsVisible="false" Placeholder="Especificar"/>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="SaludMentalCheckBox" CheckedChanged="OnCheckBoxCheckedChangedSaludMental"/>
+                    <Label Text="Trastorno de salud mental (ansiedad, depresión, etc.)" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Entry x:Name="EspecificaSaludMentalEntry" IsVisible="false" Placeholder="Especificar"/>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="CariesCheckBox" />
+                    <Label Text="Caries" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AlergiasCheckBox" CheckedChanged="OnCheckBoxCheckedChangedAlergias"/>
+                    <Label Text="Alergias" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Entry x:Name="EspecificaAlergiasEntry" IsVisible="false" Placeholder="Especificar"/>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="CirugiasPreviasCheckBox" CheckedChanged="OnCheckBoxCheckedChangedCirugiasPrevias"/>
+                    <Label Text="Cirugías previas" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Entry x:Name="EspecificaCirugiasPreviasEntry" IsVisible="false" Placeholder="Especificar"/>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="InfeccionesTransmisionSexualCheckBox"   CheckedChanged="OnCheckBoxCheckedChangedInfeccionesTransmisionSexual" />
+                    <Label Text="Infecciones de Transmisión sexual"  VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Entry x:Name="EspecificaInfeccionesTransmisionSexualEntry" IsVisible="false" Placeholder="Especificar">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+                <Label x:Name="textMedicamentosActualesEntry" IsVisible="false" Text="Medicamentos actuales "/>
+                <Entry x:Name="MedicamentosActualesEntry" IsVisible="false" Placeholder="Medicamentos actuales">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="OtrosAntecedentesCheckBox"  CheckedChanged="OnCheckBoxCheckedChangedInfeccionesOtrosAntecedentes"/>
+                    <Label Text="Otros antecedentes relevantes" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Entry x:Name="EspecificaOtrosAntecedentesEntry" IsVisible="false" Placeholder="Especificar"/>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="GinecologicosCheckBox" CheckedChanged="OnCheckBoxCheckedChangedInfeccionesGinecologicos"/>
+                    <Label x:Name="textGinecologicosCheckBox"  Text="Gineco-obstetra" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Label  x:Name="textMenarcaEntry" Text="Menarca" IsVisible="false"/>
+                <Entry x:Name="MenarcaEntry" IsVisible="false" Placeholder="Menarca">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+                <Label x:Name="textInicioVidaSexualEntry" Text="Inicio de vida sexual activa" IsVisible="false"/>
+                <Entry x:Name="InicioVidaSexualEntry" IsVisible="false" Placeholder="Inicio de vida sexual activa">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+                <Label x:Name="textParejasSexualesEntry" Text="No. de parejas sexuales" IsVisible="false"/>
+                <Entry x:Name="ParejasSexualesEntry" IsVisible="false"  Placeholder="No. de parejas sexuales">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                    InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                    ValidStyle="{StaticResource ValidEntryStyle}"
+                    Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+                        x:Name="ParejasSexualesEntryAnyValidation" 
+                        CharacterType="Any" 
+                        MinimumCharacterTypeCount="0" 
+                        MaximumCharacterTypeCount="2"
+                        
+                        toolkit:MultiValidationBehavior.Error="" 
+                        RegexPattern="^[0-9]+$" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+                <Label x:Name="textGestasEntry" Text="Gestas" IsVisible="false"/>
+                <Entry x:Name="GestasEntry" IsVisible="false" Placeholder="No. de Gestas">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                    InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                    ValidStyle="{StaticResource ValidEntryStyle}"
+                    Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+                        x:Name="GestasEntryAnyValidation" 
+                        CharacterType="Any" 
+                        MinimumCharacterTypeCount="0" 
+                        MaximumCharacterTypeCount="2"
+                        
+                        toolkit:MultiValidationBehavior.Error="" 
+                        RegexPattern="^[0-9]+$" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+                <Label x:Name="textPartosEntry" Text="Partos" IsVisible="false"/>
+                <Entry x:Name="PartosEntry" IsVisible="false" Placeholder="No. de Partos">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                    InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                    ValidStyle="{StaticResource ValidEntryStyle}"
+                    Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+                        x:Name="PartosEntryAnyValidation" 
+                        CharacterType="Any" 
+                        MinimumCharacterTypeCount="0" 
+                        MaximumCharacterTypeCount="2"
+                        
+                        toolkit:MultiValidationBehavior.Error="" 
+                        RegexPattern="^[0-9]+$" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+                <Label x:Name="textCesareasEntry" Text="Cesárias" IsVisible="false"/>
+                <Entry x:Name="CesareasEntry" IsVisible="false" Placeholder="No. de Cesáreas">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                    InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                    ValidStyle="{StaticResource ValidEntryStyle}"
+                    Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+                        x:Name="CesareasEntryAnyValidation" 
+                        CharacterType="Any" 
+                        MinimumCharacterTypeCount="0" 
+                        MaximumCharacterTypeCount="2"
+                        
+                        toolkit:MultiValidationBehavior.Error="" 
+                        RegexPattern="^[0-9]+$" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label x:Name="textAbortosEntry" Text="Abortos" IsVisible="false"/>
+                <Entry x:Name="AbortosEntry" IsVisible="false" Placeholder="No. de Abortos">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                    InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                    ValidStyle="{StaticResource ValidEntryStyle}"
+                    Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+                        x:Name="AbortosEntryAnyValidation" 
+                        CharacterType="Any" 
+                        MinimumCharacterTypeCount="0" 
+                        MaximumCharacterTypeCount="2"
+                        
+                        toolkit:MultiValidationBehavior.Error="" 
+                        RegexPattern="^[0-9]+$" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+                <Label x:Name="textCitologiaCervicalEntry" Text="Citología Cervical" IsVisible="false"/>
+                <Entry x:Name="CitologiaCervicalEntry" IsVisible="false"  Placeholder="Citología Cervical">
+                    <Entry.Behaviors>
+
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+                <Label  x:Name="textExploracionMamariaEntry" Text="Exploración mamaria" IsVisible="false"/>
+                <Entry x:Name="ExploracionMamariaEntry" IsVisible="false" Placeholder="Exploración mamaria">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+                <Label  x:Name="textMastografiaEntry"  Text="Mastografía" IsVisible="false"/>
+                <Entry x:Name="MastografiaEntry" IsVisible="false" Placeholder="Mastografía">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+                <Label  x:Name="textPlanificacionFamiliarEntry" Text="Método de planificación familiar" IsVisible="false"/>
+                <Entry x:Name="PlanificacionFamiliarEntry" IsVisible="false" Placeholder="Método de planificación familiar">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="3. Antecedentes Familiares" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AntecedentesHipertensionCheckBox"  CheckedChanged="OnCheckBoxAntecedentesHipertensionCheckBox" />
+                    <Label Text="Hipertensión Arterial" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+                <Picker x:Name="ParentescoHipertensionPicker" IsVisible="false" Title="Parentesco">
+                    <Picker.Items>
+
+                        <x:String>Padres</x:String>
+                        <x:String>Abuelos</x:String>
+                        <x:String>Tíos</x:String>
+                        <x:String>Hermanos</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AntecedentesDiabetesCheckBox"  CheckedChanged="OnCheckBoxCheckedChangedAntecedentesDiabetesCheckBox" />
+                    <Label Text="Diabetes Mellitus" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Picker x:Name="ParentescoDiabetesPicker"  IsVisible="false" Title="Parentesco">
+                    <Picker.Items>
+                        <x:String>Padres</x:String>
+                        <x:String>Abuelos</x:String>
+                        <x:String>Tíos</x:String>
+                        <x:String>Hermanos</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AntecedentesObesidadCheckBox"  CheckedChanged="OnCheckBoxCheckedChangedAntecedentesObesidadCheckBox" />
+                    <Label Text="Obesidad" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Picker x:Name="ParentescoObesidadPicker"  IsVisible="false" Title="Parentesco">
+                    <Picker.Items>
+                        <x:String>Padres</x:String>
+                        <x:String>Abuelos</x:String>
+                        <x:String>Tíos</x:String>
+                        <x:String>Hermanos</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AntecedentesEnfermedadCerdiovascularCheckBox"  CheckedChanged="OnCheckBoxCheckedChangedAntecedentesEnfermedadCerdiovascularCheckBox" />
+                    <Label Text="Enfermedad cardiovascular" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+                <Picker x:Name="ParentescoEnfermedadCardiovascularPicker" IsVisible="false" Title="Parentesco">
+                    <Picker.Items>
+                        <x:String>Padres</x:String>
+                        <x:String>Abuelos</x:String>
+                        <x:String>Tíos</x:String>
+                        <x:String>Hermanos</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AntecedentesDislipidemiaCheckBox"   CheckedChanged="OnCheckBoxCheckedChangedAntecedentesDislipidemiaCheckBox" />
+                    <Label Text="Dislipidemia (Colesterol/Trigliceridos)" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Picker x:Name="ParentescoDislipidemiaPicker" IsVisible="false" Title="Parentesco">
+                    <Picker.Items>
+                        <x:String>Padres</x:String>
+                        <x:String>Abuelos</x:String>
+                        <x:String>Tíos</x:String>
+                        <x:String>Hermanos</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AntecedentesAsmaCheckBox"   CheckedChanged="OnCheckBoxCheckedChangedAntecedentesAsmaCheckBox" />
+                    <Label Text="Asma/EPOC" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Picker x:Name="ParentescoAsmaPicker" IsVisible="false" Title="Parentesco">
+                    <Picker.Items>
+                        <x:String>Padres</x:String>
+                        <x:String>Abuelos</x:String>
+                        <x:String>Tíos</x:String>
+                        <x:String>Hermanos</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AntecedentesEpilepsiaCheckBox"    CheckedChanged="OnCheckBoxCheckedChangedAntecedentesEpilepsiaCheckBox" />
+                    <Label Text="Epilepsia" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Picker x:Name="ParentescoEpilepsiaPicker"  IsVisible="false" Title="Parentesco">
+                    <Picker.Items>
+                        <x:String>Padres</x:String>
+                        <x:String>Abuelos</x:String>
+                        <x:String>Tíos</x:String>
+                        <x:String>Hermanos</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AntecedentesCancerCheckBox"   CheckedChanged="OnCheckBoxCheckedChangedAntecedentesCancerCheckBox" />
+                    <Label Text="Cáncer" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Picker x:Name="ParentescoCancerPicker" IsVisible="false" Title="Parentesco">
+                    <Picker.Items>
+                        <x:String>Padres</x:String>
+                        <x:String>Abuelos</x:String>
+                        <x:String>Tíos</x:String>
+                        <x:String>Hermanos</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AntecedentesSaludMentalCheckBox"   CheckedChanged="OnCheckBoxCheckedChangedAntecedentesSaludMentalCheckBoxx" />
+                    <Label Text="Trastorno de salud mental (ansiedad, depresión, etc.)" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                <Picker x:Name="ParentescoSaludMentalPicker" IsVisible="false" Title="Parentesco">
+                    <Picker.Items>
+                        <x:String>Padres</x:String>
+                        <x:String>Abuelos</x:String>
+                        <x:String>Tíos</x:String>
+                        <x:String>Hermanos</x:String>
+                        <x:String>Ninguno</x:String>
+                    </Picker.Items>
+                </Picker>
+
+
+                <Label Text="4. Estilo de vida y factores de riesgo" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+
+
+                <Label Text="Tabaquismo *"/>
+                <Picker x:Name="TabaquismoPicker" Title="Selecciona una opción"  SelectedIndexChanged="OnEventIndexChangedTabaquismoPicker">
+                    <Picker.Items>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Entry x:Name="TabaquismoNumEntry" IsVisible="false" Placeholder="Si fuma, ¿cuántos cigarrillos/día?"  TextChanged="TabaquismoNumEntry_TextChanged">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                    InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                    ValidStyle="{StaticResource ValidEntryStyle}"
+                    Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+                        x:Name="TabaquismoNumEntryAnyValidation" 
+                        CharacterType="Any" 
+                        toolkit:MultiValidationBehavior.Error="Número" 
+                        RegexPattern="^[0-9]+$" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="Consumo de alcohol*"/>
+                <Picker x:Name="ConsumoAlcoholPicker" Title="Selecciona una opción" SelectedIndexChanged="OnEventIndexChangedConsumoAlcoholPicker">
+                    <Picker.Items>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="ConsumoAlcoholFrecuenciaEntry"  IsVisible="false" Placeholder="Frecuencia">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Consumo de drogas*"/>
+                <Picker x:Name="ConsumoDrogasPicker" Title="Selecciona una opción" SelectedIndexChanged="OnEventIndexChangedConsumoDrogasPicker">
+                    <Picker.Items>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="ConsumoDrogasFrecuenciaEntry"  IsVisible="false" Placeholder="Frecuencia">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Actividad física *"/>
+                <Picker x:Name="AcividadFisicaPicker" Title="Selecciona una opción" >
+                    <Picker.Items>
+                        <x:String>Sedentario</x:String>
+                        <x:String>Moderada</x:String>
+                        <x:String>Frecuente</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Alimentación *"/>
+                <Picker x:Name="AlimentacionPicker" Title="Selecciona una opción" >
+                    <Picker.Items>
+                        <x:String>Alta en grasas</x:String>
+                        <x:String>Alta en sal</x:String>
+                        <x:String>Rica en frutas y verduras</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Nivel de estrés *"/>
+                <Picker x:Name="NivelEstresPicker" Title="Selecciona una opción" >
+                    <Picker.Items>
+                        <x:String>Bajo</x:String>
+                        <x:String>Moderado</x:String>
+                        <x:String>Alto</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Apoyo familiar o red de apoyo *"/>
+                <Picker x:Name="ApoyoFamiliarPicker" Title="Selecciona una opción" >
+                    <Picker.Items>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="¿Cuénta con mascotas? *"/>
+                <Picker x:Name="TieneMascotasPicker" Title="Selecciona una opción" SelectedIndexChanged="OnEventIndexChangedTieneMascotasPicker">
+                    <Picker.Items>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label x:Name = "textEstanVacunadosEntry" Text = "¿Están vacunados y/o esterilizados?" IsVisible = "false" />
+                <Entry x:Name="EstanVacunadosEntry"  IsVisible="false" Placeholder="¿Están vacunados?">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="5. Evaluación social y condiciones del entorno" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+
+                <Label Text="Tipo de vivienda *"/>
+                <Picker x:Name="TipoViviendaPicker" Title="Selecciona una opción">
+                    <Picker.Items>
+                        <x:String>Propia</x:String>
+                        <x:String>Alquilada/Rentada</x:String>
+                        <x:String>Prestada</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Condiciones del hogar *"/>
+                <Picker x:Name="CondicionesHogarPicker"  Title="Selecciona una opción">
+                    <Picker.Items>
+                        <x:String>Buenas</x:String>
+                        <x:String>Regular</x:String>
+                        <x:String>Deficientes</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Acceso a servicios básicos:"/>
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="ServicioAguaCheckBox" />
+                    <Label Text="Agua" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="ServicioLuzCheckBox" />
+                    <Label Text="Luz" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="ServicioGasCheckBox" />
+                    <Label Text="Gas" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="ServicioDrenajeCheckBox" />
+                    <Label Text="Drenaje" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <Label Text="En su casa habitan:"/>
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="PersonasMayoresCheckBox" />
+                    <Label Text="Personas mayores" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="PersonasDiscapacidadCheckBox" />
+                    <Label Text="Personas con discapacidad" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="Menores5aniosCheckBox" />
+                    <Label Text="Niños/as menores de 5 años" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+
+                <Label Text="Riesgos sociales identificados:"/>
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="ViolenciaFamiliarCheckBox" />
+                    <Label Text="Violencia intrafamiliar" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="AbandonoCheckBox" />
+                    <Label Text="Abandono" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="InseguridadAlimentariaCheckBox" />
+                    <Label Text="Inseguridad alimentaria" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="DesempleoCheckBox" />
+                    <Label Text="Desempleo" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <Entry x:Name="RiegosSocialesObservacionesEntry" Placeholder="Observaciones">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="6. Motivo de consulta y padecimiento actual" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+
+                <Label Text="(Descripción breve del motivo de consulta y problema de salud actual: síntomas, tiempo de evolución, tratamientos previos, etc.)"/>
+                <Entry x:Name="MotivoConsultaEditor" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="7. Interrogatorio por Aparatos y Sistemas (breve)" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+
+                <Label Text="Respiratorio"/>
+                <Picker x:Name="RespiratorioPicker" SelectedIndexChanged="OnEventIndexChangedRespiratorioPicker">
+                    <Picker.Items>
+                        <x:String>Selecciona una opción</x:String>
+                        <x:String>Tos</x:String>
+                        <x:String>Disnea</x:String>
+                        <x:String>Otro</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="EspecificaOtroRespiratorioEntry"  IsVisible="false" Placeholder="Especificar">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Cardiovascular"/>
+                <Picker x:Name="CardiovascularPicker"  SelectedIndexChanged="OnEventIndexChangedCardiovascularPicker">
+                    <Picker.Items>
+                        <x:String>Selecciona una opción</x:String>
+                        <x:String>Palpitaciones</x:String>
+                        <x:String>Dolor torácico</x:String>
+                        <x:String>Otro</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="EspecificaOtroCardiovascularEntry"  IsVisible="false" Placeholder="Especificar">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Digestivo"/>
+                <Picker x:Name="DigestivoPicker"  SelectedIndexChanged="OnEventIndexChangedDigestivoPicker">
+                    <Picker.Items>
+                        <x:String>Selecciona una opción</x:String>
+                        <x:String>Náuseas</x:String>
+                        <x:String>Dolor abdominal</x:String>
+                        <x:String>Otro</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="EspecificaOtroDigestivoEntry"  IsVisible="false" Placeholder="Especificar">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Musculoesquelético"/>
+                <Picker x:Name="MusculoesqueleticoPicker"  SelectedIndexChanged="OnEventIndexChangedMusculoesqueleticoPicker">
+                    <Picker.Items>
+                        <x:String>Selecciona una opción</x:String>
+                        <x:String>Dolor</x:String>
+                        <x:String>Limitación de movimiento</x:String>
+                        <x:String>Otro</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="EspecificaOtroMusculoesqueleticoEntry" IsVisible="false" Placeholder="Especificar">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Neurológico"/>
+                <Picker x:Name="NeurologicoPicker"  SelectedIndexChanged="OnEventIndexChangedNeurologicoPicker">
+                    <Picker.Items>
+                        <x:String>Selecciona una opción</x:String>
+                        <x:String>Mareo</x:String>
+                        <x:String>Convulsiones</x:String>
+                        <x:String>Alteración de memoria</x:String>
+                        <x:String>Otro</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="EspecificaOtroNeurologicoEntry" IsVisible="false" Placeholder="Especificar">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Genitourinario"/>
+                <Picker x:Name="GenitourinarioPicker"  SelectedIndexChanged="OnEventIndexChangedGenitourinarioPicker">
+                    <Picker.Items>
+                        <x:String>Selecciona una opción</x:String>
+                        <x:String>Disuria</x:String>
+                        <x:String>Incontinencia</x:String>
+                        <x:String>Alteraciones Menstruales</x:String>
+                        <x:String>Otro</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="EspecificaOtroGenitourinarioEntry" IsVisible="false" Placeholder="Especificar">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Psicológico"/>
+                <Picker x:Name="PsicologicoPicker" SelectedIndexChanged="OnEventIndexChangedPsicologicoPicker">
+                    <Picker.Items>
+                        <x:String>Selecciona una opción</x:String>
+                        <x:String>Tristeza</x:String>
+                        <x:String>Ansiedad</x:String>
+                        <x:String>Otro</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="EspecificaOtroPsicologicoEntry" IsVisible="false" Placeholder="Especificar">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="8. Examen Físico" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+
+                <Label Text="Signos vitales:" FontSize="18"/>
+
+                <Label Text="Tensión arterial (120/80) *"/>
+                <Entry x:Name="TensionArterialEntry" Placeholder="mmHg">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Frecuencia cardiaca *"/>
+                <Entry x:Name="FrecuenciaCardiacaEntry" Placeholder="lpm" Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                     InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                     ValidStyle="{StaticResource ValidEntryStyle}"
+                     Flags="ValidateOnValueChanged">
+
+                            <toolkit:NumericValidationBehavior 
+                        InvalidStyle="{StaticResource InvalidEntryStyle}"
+                        ValidStyle="{StaticResource ValidEntryStyle}"
+                        Flags="ValidateOnValueChanged"
+                        MinimumValue="0"
+                        MaximumValue="220"
+                        MaximumDecimalPlaces="0" />
+
+                            <!--<toolkit:CharactersValidationBehavior 
+                         x:Name="FrecuenciaCardiacaEntryAnyValidation" 
+                         CharacterType="Any" 
+                         MinimumCharacterTypeCount="1" 
+                         MaximumCharacterTypeCount="3"
+                         toolkit:MultiValidationBehavior.Error="3 caracteres" 
+                         RegexPattern="" />-->
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="Temperatura *"/>
+                <Entry x:Name="TemperaturaEntry" Placeholder="35.1°C" Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                     InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                     ValidStyle="{StaticResource ValidEntryStyle}"
+                     Flags="ValidateOnValueChanged">
+
+                            <toolkit:NumericValidationBehavior 
+                        InvalidStyle="{StaticResource InvalidEntryStyle}"
+                        ValidStyle="{StaticResource ValidEntryStyle}"
+                        Flags="ValidateOnValueChanged"
+                        MinimumValue="35"
+                        MaximumValue="40"
+                        MaximumDecimalPlaces="1" />
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+
+
+                <Label Text="Frecuencia respiratoria *"/>
+                <Entry x:Name="FrecuenciaRespiratoriaEntry" Placeholder="rpm" Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                     InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                     ValidStyle="{StaticResource ValidEntryStyle}"
+                     Flags="ValidateOnValueChanged">
+
+                            <toolkit:NumericValidationBehavior 
+                        InvalidStyle="{StaticResource InvalidEntryStyle}"
+                        ValidStyle="{StaticResource ValidEntryStyle}"
+                        Flags="ValidateOnValueChanged"
+                        MinimumValue="0"
+                        MaximumValue="40"
+                        MaximumDecimalPlaces="0" />
+
+
+
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="Saturación O₂ *"/>
+                <Entry x:Name="SaturacionO2Entry" Placeholder="%" Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                     InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                     ValidStyle="{StaticResource ValidEntryStyle}"
+                     Flags="ValidateOnValueChanged">
+
+                            <toolkit:NumericValidationBehavior 
+                        InvalidStyle="{StaticResource InvalidEntryStyle}"
+                        ValidStyle="{StaticResource ValidEntryStyle}"
+                        Flags="ValidateOnValueChanged"
+                        MinimumValue="10"
+                        MaximumValue="100"
+                        MaximumDecimalPlaces="0" />
+
+
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+
+
+
+                <!-- Peso en kg -->
+                <Label Text="Peso *" />
+                <Entry x:Name="PesoEntry" Placeholder="kg - ej. 68.500" Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+      InvalidStyle="{StaticResource InvalidEntryStyle}"  
+      ValidStyle="{StaticResource ValidEntryStyle}"
+      Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+          x:Name="PesoEntryDecimalValidation" 
+          CharacterType="Any" 
+          toolkit:MultiValidationBehavior.Error="Formato: 68.500" 
+          RegexPattern="^\d{1,3}(\.\d{1,3})?$" />
+
+                            <toolkit:NumericValidationBehavior 
+          InvalidStyle="{StaticResource InvalidEntryStyle}"
+          ValidStyle="{StaticResource ValidEntryStyle}"
+          Flags="ValidateOnValueChanged"
+          MinimumValue="1"
+          MaximumValue="400"
+          MaximumDecimalPlaces="3" />
+
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+                <!-- Talla en metros -->
+                <Label Text="Talla *"/>
+                <Entry x:Name="TallaEntry" Placeholder="metros - ej. 1.75" Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+      InvalidStyle="{StaticResource InvalidEntryStyle}"  
+      ValidStyle="{StaticResource ValidEntryStyle}"
+      Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+          x:Name="TallaEntryDecimalValidation" 
+          CharacterType="Any" 
+          toolkit:MultiValidationBehavior.Error="Formato: 1.75" 
+          RegexPattern="^\d{1,2}(\.\d{1,2})?$" />
+
+                            <toolkit:NumericValidationBehavior 
+          InvalidStyle="{StaticResource InvalidEntryStyle}"
+          ValidStyle="{StaticResource ValidEntryStyle}"
+          Flags="ValidateOnValueChanged"
+          MinimumValue="0.50"
+          MaximumValue="2.50"
+          MaximumDecimalPlaces="2" />
+
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+
+                <!-- IMC (calculado automáticamente) -->
+                <Label Text="IMC *"/>
+                <Entry x:Name="ImcEntry" Placeholder="Se calculará automáticamente" IsEnabled="False" TextColor="Gray"/>
+
+                <Picker x:Name="ImcPicker" Title="Categoría IMC" IsEnabled="False">
+                    <Picker.Items>
+                        <x:String>Bajo peso</x:String>
+                        <x:String>Normal</x:String>
+                        <x:String>Sobrepeso</x:String>
+                        <x:String>Obesidad</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Estado general"/>
+                <Picker x:Name="EstadoGeneralPicker" >
+                    <Picker.Items>
+                        <x:String>Selecciona una opción</x:String>
+                        <x:String>Bueno</x:String>
+                        <x:String>Regular</x:String>
+                        <x:String>Malo</x:String>
+                    </Picker.Items>
+                </Picker>
+
+
+                <Label Text="Exploración física *"/>
+                <Entry x:Name="ExploracionFisicaEditor" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="9. Detecciones (aplicar según edad y género)" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+
+                <Label Text="Tamizaje de hipertensión (TA elevada)"/>
+                <Picker x:Name="TamizajeHipertensionPicker"    SelectedIndexChanged="OnEventIndexChangedTamizajeHipertensionPicker">
+                    <Picker.Items>
+                        <x:String>Aplicado</x:String>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="TamizajeHipertensionEntry"  IsVisible="false" Placeholder="Resultado/Observaciones" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Tamizaje de diabetes (glucemia capilar)"/>
+                <Picker x:Name="TamizajeDiabetesPicker"  SelectedIndexChanged="OnEventIndexChangedTamizajeDiabetesPicker">
+                    <Picker.Items>
+                        <x:String>Aplicado</x:String>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="TamizajeDiabetesEntry" IsVisible="false" Placeholder="Resultado/Observaciones" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Exploración mamaria (≥20 años)"/>
+                <Picker x:Name="DeteccionesExploracionMamariaPicker"   SelectedIndexChanged="OnEventIndexChangedDeteccionesExploracionMamariaPicker">
+                    <Picker.Items>
+                        <x:String>Aplicado</x:String>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="DeteccionesExploracionMamariaEntry" IsVisible="false" Placeholder="Resultado/Observaciones" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Exploración clínica de  mamaria"/>
+                <Picker x:Name="ExploracionClinicaMamariaPicker"  SelectedIndexChanged="OnEventIndexChangedExploracionClinicaMamariaPicker">
+                    <Picker.Items>
+                        <x:String>Aplicado</x:String>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="ExploracionClinicaMamariaEntry" IsVisible="false" Placeholder="Resultado/Observaciones" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Evaluación del estado nutricional (test breve anexo 1)"/>
+                <Picker x:Name="DeteccionesEvaluacionEstadoNutricionalPicker"  SelectedIndexChanged="OnEventIndexChangedDeteccionesEvaluacionEstadoNutricionalPicker">
+                    <Picker.Items>
+                        <x:String>Aplicado</x:String>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="DeteccionesEvaluacionEstadoNutricionalEntry"   IsVisible="false" Placeholder="Resultado/Observaciones" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Salud mental (test breve anexo 2)"/>
+                <Picker x:Name="DeteccionesSaludMentalPicker"  SelectedIndexChanged="OnEventIndexChangedDeteccionesSaludMentalPicker">
+                    <Picker.Items>
+                        <x:String>Aplicado</x:String>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="DeteccionesSaludMentalEntry"   IsVisible="false" Placeholder="Resultado/Observaciones" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Revisión Bucal"/>
+                <Picker x:Name="DeteccionesRevisionBucalPicker"  SelectedIndexChanged="OnEventIndexChangedDeteccionesRevisionBucalPicker">
+                    <Picker.Items>
+                        <x:String>Aplicado</x:String>
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="DeteccionesRevisionBucalEntry" IsVisible="false" Placeholder="Resultado/Observaciones" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="10. Impresión Diagnóstica / Problemas Identificados" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+
+                <Entry x:Name="ImpresionDiagnostica1Entry" Placeholder="1.">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Entry x:Name="ImpresionDiagnostica2Entry" Placeholder="2.">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Entry x:Name="ImpresionDiagnostica3Entry" Placeholder="3.">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="11. Plan de Manejo" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+
+                <Label Text="Tratamiento / Medicamentos entregados: *"/>
+                <Entry x:Name="TratamientoMedicamentosEntregadosEditor" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Entrega de suplementos / insumos: *"/>
+                <Entry x:Name="EntregaSuplementosInsumosEditor" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Educación en salud: *"/>
+                <Entry x:Name="EducacionSaludEditor" HeightRequest="120">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Referencias necesarias"/>
+                <Picker x:Name="ReferenciasNecesariasPicker" >
+                    <Picker.Items>
+                        <x:String>Selecciona una opción</x:String>
+                        <x:String>Centro de salud</x:String>
+                        <x:String>Hospital</x:String>
+                        <x:String>Especialista</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="LugarEntry" Placeholder="Lugar *">
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                    </Entry.Behaviors>
+                </Entry>
+
+                <Label Text="Visita de seguimiento *"/>
+                <Picker x:Name="VisitaSeguimientoPicker" Title="Seleccione Opción"  SelectedIndexChanged="OnEventIndexChangedVisitaSeguimientoPicker">
+                    <Picker.Items>
+
+                        <x:String>Sí</x:String>
+                        <x:String>No</x:String>
+                    </Picker.Items>
+                </Picker>
+                <DatePicker x:Name="FechaSugeridaEntry" IsVisible="false" />
+
+
+                <Label Text="12. Profesional que Realiza la Atención" FontAttributes="Bold" FontSize="18"/>
+                <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
+
+                <Label Text="Nombre completo *"/>
+                <Entry x:Name="NombreEncuestadorEntry" TextTransform="Uppercase"  Placeholder="Nombre Encuestador"   TextChanged="NombreEncuestadorEntry_TextChanged" >
+
+                    <Entry.Behaviors>
+                        <behaviors:BloquearEmojisBehavior />
+                        <toolkit:MultiValidationBehavior 
+                          InvalidStyle="{StaticResource InvalidEntryStyle}"  
+                          ValidStyle="{StaticResource ValidEntryStyle}"
+                          Flags="ValidateOnValueChanged">
+
+                            <toolkit:CharactersValidationBehavior 
+                          x:Name="NombreEncuestadorEntryAnyValidation2UpperValidation" 
+                          CharacterType="UppercaseLetter" 
+                          toolkit:MultiValidationBehavior.Error="Nombre completo deben ser mayusculas" 
+                          RegexPattern="" />
+
+
+                            <toolkit:CharactersValidationBehavior 
+                       x:Name="NombreEncuestadorEntryAnyValidation" 
+                       CharacterType="Any" 
+                       MinimumCharacterTypeCount="3" 
+                       toolkit:MultiValidationBehavior.Error="Nombre completo debe ser mayor a 3 caracteres" 
+                       RegexPattern="^[A-ZÁÉÍÓÚÑ\s]+$" />
+                        </toolkit:MultiValidationBehavior>
+
+                    </Entry.Behaviors>
+                </Entry>
+
+
+                <Label Text="Cargo *"/>
+                <Picker x:Name="CargoEncuestadorPicker"  Title="Selecciona una opción" >
+                    <Picker.Items>
+                        <x:String>Médico</x:String>
+                        <x:String>Enfermero</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="¿Qué tanta disposición mostró la persona entrevistada hacía el brigadista? *"/>
+                <Picker x:Name="DisposicionEncuestadoPicker"  Title="Selecciona una opción" >
+                    <Picker.Items>
+                        <x:String>Nula</x:String>
+                        <x:String>Regular</x:String>
+                        <x:String>Buena</x:String>
+                        <x:String>Muy buena</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Button Text="Guardar" Clicked="OnGuardarClicked" BackgroundColor="#055A1C" TextColor="White"/>
+                <StackLayout Padding="0,40,0,0">
+                    <!-- Margin defined by a single uniform value. -->
+                    <Label Margin="30" />
+                    <!-- Margin defined by horizontal and vertical values. -->
+                    <Label Margin="10,15" />
+                    <!-- Margin defined by four distinct values that are applied to the left, top, right, and bottom. -->
+                    <Label Margin="0,20,15,5" />
+                </StackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid x:Name="LoadingOverlay"
+IsVisible="False"
+BackgroundColor="#80000000"
+InputTransparent="False">
+
+            <VerticalStackLayout
+  VerticalOptions="Center"
+  HorizontalOptions="Center"
+  Spacing="15">
+
+                <ActivityIndicator
+      IsRunning="True"
+      Color="White"
+      WidthRequest="50"
+      HeightRequest="50"/>
+
+                <Label Text="Guardando encuesta..."
+         TextColor="White"
+         FontAttributes="Bold"
+         HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+
+        </Grid>
+    </Grid>
+</ContentPage>

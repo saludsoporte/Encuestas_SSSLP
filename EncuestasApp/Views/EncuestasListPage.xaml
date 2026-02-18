@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EncuestaApp.Views.EncuestasListPage"
+             >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="settings.png"
+                     Text="Configuración"
+                     Order="Primary"
+                     Priority="0"
+                     Clicked="OnConfigClicked"/>
+    </ContentPage.ToolbarItems>
+    <Grid>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <Button Text="Nueva Encuesta" 
+                Clicked="OnNuevaEncuestaClicked"
+                BackgroundColor="#055A1C" 
+                TextColor="White"/>
+
+            <Button x:Name="SyncButton"
+                Text="🔄 Sincronizar"
+                Clicked="OnSyncClicked"
+                BackgroundColor="Gray"
+                TextColor="White"/>
+
+            <Label Text="Lista de encuestas guardadas de la brigada" FontAttributes="Bold" Margin="0" FontSize="16"/>
+
+            <CollectionView x:Name="EncuestasCollection" BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource OffBlack}}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame  CornerRadius="10" Padding="10" Margin="5">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding NombreCompleto}" FontAttributes="Bold" FontSize="16"/>
+                                <Label Text="{Binding Edad, StringFormat='Edad: {0} años'}"/>
+                                <Label Text="{Binding Genero, StringFormat='Género: {0}'}"/>
+                                <Label Text="{Binding DomicilioCompleto, StringFormat='Domicilio: {0}'}" LineBreakMode="TailTruncation"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+        <Grid x:Name="SyncOverlay"
+      IsVisible="False"
+      BackgroundColor="#80000000"
+      InputTransparent="False">
+
+            <VerticalStackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Spacing="15">
+
+                <ActivityIndicator
+            IsRunning="True"
+            Color="White"
+            WidthRequest="50"
+            HeightRequest="50"/>
+
+                <Label x:Name="SyncStatusLabel"
+               Text="Sincronizando..."
+               TextColor="White"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

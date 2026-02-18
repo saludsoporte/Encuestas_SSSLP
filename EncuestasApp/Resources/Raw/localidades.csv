@@ -1,0 +1,2182 @@
+﻿CVE_ENT,CVE_MUN,CVE_LOC,NOMGEO,AMBITO
+24,001,0007,Cañada Grande (El Bosque),Rural
+24,001,0011,Cerrito de Rojas,Rural
+24,001,0014,Cochinillas,Rural
+24,001,0035,San Antonio Ojo de Agua,Rural
+24,001,0043,El Temazcal,Rural
+24,001,0049,El Zapatero,Rural
+24,001,0056,Cañón de Yerbabuena,Rural
+24,001,0070,Tierra Prieta,Rural
+24,001,0025,La Parada,Rural
+24,001,0076,Mina Blanca,Rural
+24,001,0053,La Mezclita,Rural
+24,001,0054,Clavellinas,Rural
+24,001,0006,Barrancas,Rural
+24,001,0001,Ahualulco del Sonido 13,Urbana
+24,001,0015,Colonia de la Cruz,Rural
+24,001,0016,Coyotillos,Rural
+24,001,0020,La Higuera,Rural
+24,001,0028,Pedregal,Rural
+24,001,0029,Santa Petronilas,Rural
+24,001,0018,La Encarnación,Rural
+24,001,0012,Los Cerritos,Rural
+24,001,0021,Estación Ipiña,Rural
+24,001,0039,San Salvador,Rural
+24,001,0047,El Tulillo,Rural
+24,001,0019,Estancia del Arenal (Arenal Viejo),Rural
+24,001,0010,El Zapote (Cerrito Blanco),Rural
+24,001,0013,Cerro Blanco,Rural
+24,001,0034,El Salitre,Rural
+24,001,0008,Cañada Grande,Rural
+24,001,0032,Rincón de Yerbabuena,Rural
+24,001,0040,Santa Teresa,Rural
+24,001,0051,La Candelaria,Rural
+24,001,0017,Ejido del Centro,Rural
+24,001,0037,San Juan (San Juan de Coyotillos),Rural
+24,001,0005,Arenal de Morelos,Rural
+24,001,0045,Tinaja,Rural
+24,001,0122,Los Árboles (Colonia de la Cruz),Rural
+24,001,0046,La Trinidad,Rural
+24,001,0064,El Tulillo (San Nicolás),Rural
+24,001,0048,Yerbabuena,Rural
+24,001,0026,Paso Bonito,Rural
+24,002,0005,Cañaditas,Rural
+24,002,0011,Maldonado,Rural
+24,002,0015,Rancho de Morales,Rural
+24,002,0017,Ojo de Agua,Rural
+24,002,0018,Olla del Durazno (Joya del Durazno),Rural
+24,002,0021,Las Peñitas,Rural
+24,002,0023,Rancho de Pro,Rural
+24,002,0025,Rancho Nuevo,Rural
+24,002,0032,Las Tuzas,Rural
+24,002,0041,Las Huertas,Rural
+24,002,0001,Alaquines,Urbana
+24,002,0003,El Callejón de la Luz,Rural
+24,002,0010,El Llanito,Rural
+24,002,0027,El Sabino,Rural
+24,002,0019,Pasito de San Francisco,Rural
+24,002,0016,Nueva Reforma,Rural
+24,002,0012,Martínez,Rural
+24,002,0029,San José del Corito,Rural
+24,002,0030,San José de Palmas,Rural
+24,002,0004,La Cañada,Rural
+24,003,0002,Agua Amarga,Rural
+24,003,0005,La Caldera,Rural
+24,003,0008,La Cuchilla,Rural
+24,003,0016,La Morena,Rural
+24,003,0018,El Naranjito,Rural
+24,003,0024,Puhuitzé,Rural
+24,003,0032,Santa Anita,Rural
+24,003,0042,Tamcuem,Rural
+24,003,0044,Tanchachín,Rural
+24,003,0052,El Zopope,Rural
+24,003,0060,Los Remedios,Rural
+24,003,0087,Los Hornos,Rural
+24,003,0089,Yerbabuena,Rural
+24,003,0093,La Cañada (Los Corrales),Rural
+24,003,0098,San Isidro,Rural
+24,003,0103,Lanim,Rural
+24,003,0108,La Brecha (La Brecha de Tantzotzob),Rural
+24,003,0109,El Volantín,Rural
+24,003,0129,Puerto de Guaymas,Rural
+24,003,0248,Barrio San Miguel,Rural
+24,003,0255,Santa Martha,Rural
+24,003,0310,Barrio el Progreso,Rural
+24,003,0003,El Aguacate,Rural
+24,003,0026,San Francisco de Asís,Rural
+24,003,0004,Alitzé,Rural
+24,003,0015,El Mirador,Rural
+24,003,0049,La Unión de Guadalupe,Rural
+24,003,0136,San Francisco,Rural
+24,003,0012,Linjá,Rural
+24,003,0301,San Martín,Rural
+24,003,0064,El Rosario,Rural
+24,003,0036,La Mesa,Rural
+24,003,0062,Moctezuma,Rural
+24,003,0050,Jol Mom,Rural
+24,003,0086,Manja,Rural
+24,003,0031,San Rafael Tampaxal,Rural
+24,003,0084,Cuetáb,Rural
+24,003,0027,San José el Viejo,Rural
+24,003,0091,Tanchopol,Rural
+24,003,0133,Tan Tzajib,Rural
+24,003,0122,La Soledad,Rural
+24,003,0006,Camarones,Rural
+24,003,0083,La Laja,Rural
+24,003,0088,La Reforma,Rural
+24,003,0011,Joya de las Vacas,Rural
+24,003,0048,Tanute,Rural
+24,003,0047,Tantzotzob,Rural
+24,003,0010,El Jabalí,Rural
+24,003,0001,Aquismón,Urbana
+24,003,0314,NCPE Santa Anita,Rural
+24,003,0029,San Pedro de las Anonas,Rural
+24,003,0038,Tamápatz,Rural
+24,003,0020,Los Otates,Rural
+24,003,0096,El Sauz (El Saucito),Rural
+24,003,0009,Eureka,Rural
+24,003,0040,Tampaxal,Rural
+24,003,0104,Tahuilatzén,Rural
+24,003,0022,Palo de Arco,Rural
+24,003,0043,Tamcuime,Rural
+24,003,0007,Barrio la Cruz,Rural
+24,003,0014,La Mesa,Rural
+24,003,0041,Tampemoche,Rural
+24,003,0221,Jagüey Cercado,Rural
+24,003,0017,M·huatl,Rural
+24,003,0028,San José Oija,Rural
+24,003,0308,Colonia el Mirador,Rural
+24,003,0019,El Otate,Rural
+24,003,0079,Octujub o Campeche,Rural
+24,003,0114,Puerto de Tantzotzob,Rural
+24,003,0033,Santa Bárbara,Rural
+24,003,0045,Tanchanaco,Rural
+24,003,0289,El Sacrificio (Sección 26),Rural
+24,003,0030,San Rafael Tamápatz,Rural
+24,003,0046,Tanquizul,Rural
+24,003,0115,Rancho Nuevo,Rural
+24,003,0023,Paxaljá,Rural
+24,003,0039,Tampate,Rural
+24,004,0011,Cerro Grande,Rural
+24,004,0030,Palomas (El Valle de Palomas),Rural
+24,004,0033,Paso del Águila,Rural
+24,004,0038,Puerta del Refugio,Rural
+24,004,0046,San Elías,Rural
+24,004,0049,San José de Magaña,Rural
+24,004,0001,Armadillo de los Infante,Urbana
+24,004,0010,La Cardona,Rural
+24,004,0039,El Ranchito de los Guzmán,Rural
+24,004,0014,Contrayerba,Rural
+24,004,0037,Pozo del Carmen,Rural
+24,004,0029,Nogalitos de la Cruz,Rural
+24,004,0027,Mezquitalillo,Rural
+24,004,0032,Paradita del Refugio,Rural
+24,004,0013,La Concordia,Rural
+24,004,0040,Rancho Nuevo de la Cruz,Rural
+24,004,0053,Temazcal,Rural
+24,005,0010,Lobos,Rural
+24,005,0015,La Noria,Rural
+24,005,0014,Colonia Agrícola el Naranjo,Rural
+24,005,0001,Cárdenas,Urbana
+24,005,0007,Cañada de Pastores,Rural
+24,005,0008,Higinio Olivo (La Labor),Rural
+24,005,0006,Las Canoas,Rural
+24,005,0002,El Aguaje,Rural
+24,005,0017,Pantano,Rural
+24,006,0001,Real de Catorce,Urbana
+24,006,0005,Alamitos de los Díaz,Rural
+24,006,0012,Estación Catorce,Rural
+24,006,0023,El Mastranto,Rural
+24,006,0031,Potrerillos,Rural
+24,006,0037,El Salto,Rural
+24,006,0049,Santa Cruz de Carretas,Rural
+24,006,0055,Tanque de Dolores,Rural
+24,006,0032,El Potrero,Rural
+24,006,0038,San Antonio de Coronados,Rural
+24,006,0013,Los Catorce,Rural
+24,006,0030,Poblazón,Rural
+24,006,0022,Real de Maroma,Rural
+24,006,0059,Estación Wadley,Rural
+24,006,0033,Ranchito de Coronados,Rural
+24,006,0054,Tanque de Arenas,Rural
+24,006,0014,Charco Largo,Rural
+24,006,0050,Santa Cruz del Mogote,Rural
+24,006,0036,El Refugio (La Luz),Rural
+24,006,0051,Santa María del Refugio,Rural
+24,006,0040,San Cristóbal,Rural
+24,006,0010,La Cardoncita,Rural
+24,006,0015,Guadalupe del Carnicero (La Maroma),Rural
+24,006,0042,San José de Coronados,Rural
+24,007,0035,San Antonio del Sotol,Rural
+24,007,0032,Salitrillos del Refugio,Rural
+24,007,0041,San Mateo,Rural
+24,007,0005,El Blanco,Rural
+24,007,0029,Refugio de las Monjas,Rural
+24,007,0001,Cedral,Urbana
+24,007,0042,San Pablo,Rural
+24,007,0028,Refugio de Saladito,Rural
+24,007,0012,Gallos Blancos,Rural
+24,007,0023,Presa Verde,Rural
+24,007,0045,Santa Rita del Sotol,Rural
+24,007,0046,Santa Teresa,Rural
+24,007,0020,Noria de San Pedro,Rural
+24,007,0040,San Lorenzo,Rural
+24,007,0051,Zamarripa,Rural
+24,007,0037,San Isidro,Rural
+24,007,0007,Cerro de Flores,Rural
+24,007,0014,Jes·s María,Rural
+24,007,0013,Ejido Hidalgo,Rural
+24,007,0008,La Crucita,Rural
+24,007,0011,El Espíritu,Rural
+24,007,0015,Lagunillas,Rural
+24,007,0044,San Rafael de los Facundos,Rural
+24,007,0050,Tanque Nuevo,Rural
+24,007,0156,Fraccionamiento Llanos de San Gabriel,Rural
+24,007,0009,La Cruz,Rural
+24,007,0019,Noria de Dolores,Rural
+24,007,0033,Saltillito,Rural
+24,007,0006,La Boquilla,Rural
+24,007,0010,El Cuarejo,Rural
+24,007,0021,Palo Blanco,Rural
+24,007,0034,San Antonio de los Montoya,Rural
+24,008,0030,San Pedro de los Hernández,Rural
+24,008,0001,Cerritos,Urbana
+24,008,0011,Joya de Luna,Rural
+24,008,0035,El Tepetate,Rural
+24,008,0016,Mezquites Chicos,Rural
+24,008,0017,Mezquites Grandes,Rural
+24,008,0025,Rincón de Banda,Rural
+24,008,0015,Manzanillas,Rural
+24,008,0026,Rincón de Turrubiartes,Rural
+24,008,0018,Montaña,Rural
+24,008,0067,Puerto de San José (El Puerto),Rural
+24,008,0005,Cerros Blancos,Rural
+24,008,0004,Cerrito Blanco,Rural
+24,008,0003,Bosque y Caldera,Rural
+24,008,0002,La Biznaga,Rural
+24,008,0019,Ojo de Agua,Rural
+24,008,0027,San Diego,Rural
+24,008,0032,El Sauz,Rural
+24,008,0044,Nuevo Ejido San Pedro de los Hernández (Las Viborillas),Rural
+24,008,0029,San Nicolás del Bosque,Rural
+24,008,0010,El Gavilán,Rural
+24,008,0036,El Tepozán,Rural
+24,008,0028,San José de Turrubiartes (El Zamandoque),Rural
+24,008,0007,Derramaderos,Rural
+24,010,0028,Los Charcos del Poniente,Rural
+24,010,0041,La Guacamaya (La Lagunita),Rural
+24,010,0094,Estación las Tablas,Rural
+24,010,0007,Colonia Álvaro Obregón,Rural
+24,010,0054,Las Moras,Rural
+24,010,0086,San Juan del Llano,Rural
+24,010,0062,Colonia Agrícola Ollitas de las Vacas,Rural
+24,010,0081,Rincón Seco,Rural
+24,010,0015,El Capulín,Rural
+24,010,0076,Puerto del Zamandoque,Rural
+24,010,0050,Memela,Rural
+24,010,0108,Las Tortugas (Las Moras),Rural
+24,010,0053,Montebello,Rural
+24,010,0039,Las Gavias,Rural
+24,010,0090,San Rafael Matriz,Rural
+24,010,0192,Nuevo Centro de Población Ganadero Papagayos,Rural
+24,010,0068,La Pendencia,Rural
+24,010,0073,Potreritos de los Llanos,Rural
+24,010,0031,Colonia Carlos Diez Gutiérrez (La Italiana),Rural
+24,010,0084,San Antonio,Rural
+24,010,0072,El Porvenir,Rural
+24,010,0001,Ciudad del Maíz,Urbana
+24,010,0065,Palomas,Urbana
+24,010,0032,El Divisadero (La Garra),Rural
+24,010,0079,Rancho Nuevo,Rural
+24,010,0100,La Victoria,Rural
+24,010,0166,Llanitos,Rural
+24,010,0189,Sección Setenta y Nueve los Anteojos,Rural
+24,010,0104,Zamachihue,Rural
+24,010,0301,Ejido San José (La Majada),Rural
+24,010,0033,El Duro,Rural
+24,010,0043,Colonia Lagunillas,Rural
+24,010,0061,El Olivo,Rural
+24,010,0091,San Rafael Carretera,Rural
+24,010,0164,Nuevo San Rafael,Rural
+24,010,0077,Puerto de San Juan de Dios,Rural
+24,010,0046,Colonia Agrícola Magdaleno Cedillo,Rural
+24,010,0009,Los Ávalos,Rural
+24,010,0014,La Calzada de San Rafael,Rural
+24,010,0016,Carrizal Grande,Rural
+24,010,0044,Colonia la Libertad,Rural
+24,010,0004,Agua Nueva del Norte,Rural
+24,010,0055,Colonia la Morita,Rural
+24,010,0105,Sartenejo,Rural
+24,010,0097,El Tepeyac,Rural
+24,010,0087,San Juan del Meco,Rural
+24,010,0066,Papagayos (Ejido Papagayos),Rural
+24,010,0008,Aquiles Serdán,Rural
+24,010,0078,El Puerto Santa Gertrudis,Rural
+24,010,0026,El Custodio,Rural
+24,010,0051,Las Mesas de Don Luis,Rural
+24,010,0095,Tanque de los Ángeles (El Venadito),Rural
+24,010,0010,Buenavista y Olivo,Rural
+24,010,0034,La Encarnación,Rural
+24,010,0089,San Mateo,Rural
+24,010,0085,San Antonio del Toro (Cabeza del Toro),Rural
+24,011,0005,Colonia Veinte de Noviembre,Rural
+24,011,0002,Atotonilco,Rural
+24,011,0011,La Noria,Rural
+24,011,0003,Barrio de Guadalupe,Rural
+24,011,0006,Labor Vieja,Rural
+24,011,0014,El Paraíso,Rural
+24,011,0009,Morillos,Rural
+24,011,0016,La Reforma,Rural
+24,011,0018,San Isidro,Rural
+24,011,0019,San José del Terremoto,Rural
+24,011,0012,Ojo de Agua de San Juan,Rural
+24,011,0021,El Sermón Santa Ana,Rural
+24,011,0020,El Saucillo,Rural
+24,011,0022,Solano,Rural
+24,011,0025,La Ventilla,Rural
+24,011,0015,Las Pilas,Rural
+24,011,0033,San Pablo,Rural
+24,011,0141,Barrio Primero,Rural
+24,011,0049,Colonia la Peñita,Rural
+24,011,0037,La Reformita,Rural
+24,011,0001,Ciudad Fernández,Urbana
+24,011,0008,Mojarras de Arriba,Rural
+24,011,0013,Ojo de Agua de Solano,Rural
+24,012,0003,Aldzulup,Rural
+24,012,0006,El Crucero (Crucerito),Rural
+24,012,0009,Cuatlamayán,Rural
+24,012,0014,Guadalupe Victoria,Rural
+24,012,0023,Aldzulup Poytzén,Rural
+24,012,0024,San José Pequetzén,Rural
+24,012,0030,Tzé Pakáb Primera Sección,Rural
+24,012,0084,Zojualo,Rural
+24,012,0094,Colonia Primero de Mayo,Rural
+24,012,0148,Chacatitla Primera Sección,Rural
+24,012,0309,Colonia Omar San Román,Rural
+24,012,0087,Tamaletom Primera Sección,Rural
+24,012,0225,Xolol Bethania,Rural
+24,012,0316,Barrio Bicentenario,Rural
+24,012,0001,Tancanhuitz,Urbana
+24,012,0004,Las Armas,Rural
+24,012,0016,Linares,Rural
+24,012,0021,Palmira Viejo,Rural
+24,012,0013,La Garza (Pequetzén de la Garza),Rural
+24,012,0002,Alhuitot (Thimantzén),Rural
+24,012,0019,Octzén San Agustín,Rural
+24,012,0026,Tamarindo,Rural
+24,012,0020,Palmira Nuevo,Rural
+24,013,0014,El Azulejo,Rural
+24,013,0024,Camillas,Rural
+24,013,0044,La Concepción (La Concha),Rural
+24,013,0061,Ejido el Chuchupe,Rural
+24,013,0105,León García,Rural
+24,013,0141,La Pila,Rural
+24,013,0144,El Platanito,Rural
+24,013,0146,Rancho Nuevo,Rural
+24,013,0156,La Puerta del Espíritu Santo,Rural
+24,013,0164,La Raya,Rural
+24,013,0183,San Felipe,Rural
+24,013,0192,San Mateo,Rural
+24,013,0193,San Miguel,Rural
+24,013,0215,El Tamarindo,Rural
+24,013,0216,Nuevo Tambolón,Rural
+24,013,0223,Tantizohuiche,Rural
+24,013,0317,El Jacubal,Rural
+24,013,0354,El Bárbol,Rural
+24,013,0382,El Choyoso,Rural
+24,013,0444,Buenavista,Rural
+24,013,0461,San Juan,Rural
+24,013,0478,Fraccionamiento Lomas del Real,Rural
+24,013,0482,Antiguo Tambolón,Rural
+24,013,0484,Ejido la Loma (Canoítas),Rural
+24,013,0587,El Cañón del Taninul (El Abra),Rural
+24,013,0589,Loma del Desengaño (Ejido el Desengaño Dos),Rural
+24,013,0621,El Chical Dos,Rural
+24,013,0680,San Francisco,Rural
+24,013,0690,Loma de las Conchas,Rural
+24,013,0840,Granjas Uno [Fraccionamiento],Rural
+24,013,1013,Fraccionamiento Misión de San Miguel,Rural
+24,013,0143,La Pitaya (La Pitahaya),Rural
+24,013,0076,La Estribera,Rural
+24,013,0051,Coyoles,Rural
+24,013,0034,Rancho Casas Viejas,Rural
+24,013,0038,El Sidral (San Miguel el Sidral),Rural
+24,013,0467,Rancho Nuevo,Rural
+24,013,0111,El Maguey,Rural
+24,013,0672,Crucero las Pitas,Rural
+24,013,0568,Nuevo Crucitas,Rural
+24,013,0082,Colonia Ignacio Zaragoza,Rural
+24,013,0107,La Lima,Rural
+24,013,0351,La Antigua,Rural
+24,013,0053,Las Crucitas,Rural
+24,013,0253,Cerro Alto,Rural
+24,013,0079,Las Flores,Rural
+24,013,0244,Laguna del Mante,Rural
+24,013,0020,Buena Vista,Rural
+24,013,0241,Villa Fierro,Rural
+24,013,0307,El Gritadero,Rural
+24,013,0180,San Antonio Huichimal,Rural
+24,013,0093,Jabalí,Rural
+24,013,0028,Ejido las Canoas (Canoas),Rural
+24,013,0174,Sabino del Obispo (Anexo a las Pitas),Rural
+24,013,0318,La Escondida,Rural
+24,013,0088,Las Huertas,Rural
+24,013,0182,San Dieguito,Rural
+24,013,0594,Ejido Emiliano Zapata,Rural
+24,013,0232,Ejido la Toconala Uno (La Virgen),Rural
+24,013,0142,Las Pitas,Rural
+24,013,0161,Rancho Nuevo,Rural
+24,013,1191,Anexo La Lima,Rural
+24,013,0781,Colonia Rodríguez,Rural
+24,013,0711,Montecillos (La Curva),Rural
+24,013,0119,Montecillos,Rural
+24,013,0005,Adolfo López Mateos,Rural
+24,013,0010,Álvaro Obregón (El Pujal),Rural
+24,013,0176,Salcedo,Rural
+24,013,0999,Colonia Luis Donaldo Colosio,Rural
+24,013,0055,El Cuiche,Rural
+24,013,0127,Ojo de Agua,Rural
+24,013,0126,El Ojite,Rural
+24,013,0562,Ampliación la Hincada,Rural
+24,013,0114,Ejido la Marina (Ejido Colectivo),Rural
+24,013,0063,El Detalle,Rural
+24,013,0998,Colonia Eligio Quintanilla,Rural
+24,013,0842,Colonia Victoria,Rural
+24,013,0377,Chantol,Rural
+24,013,1200,Villas de San Pedro,Rural
+24,013,0001,Ciudad Valles,Urbana
+24,013,0162,Rascón,Urbana
+24,013,0360,La Calera,Rural
+24,013,0004,El Abra (San Felipe),Rural
+24,013,0239,El Verde,Rural
+24,013,1099,Troncones y la Corriente,Rural
+24,013,0181,Rancho San Carlos,Rural
+24,013,0217,Tampaya,Rural
+24,013,1199,Troncones,Rural
+24,013,0712,Los Jovitos,Rural
+24,013,0243,Zocohuite,Rural
+24,013,0210,La Subida,Rural
+24,013,0264,Ejido el Lobo,Rural
+24,013,0224,Tantóbal,Rural
+24,013,0539,Ejido la Loma,Rural
+24,013,0268,Casa Blanca,Rural
+24,013,0175,Los Sabinos N·mero Dos,Rural
+24,013,0474,Las Fincas,Rural
+24,013,0118,Estación Micos,Rural
+24,013,1064,Colonia Mano Amiga,Rural
+24,013,0479,Fraccionamiento las Granjas,Rural
+24,013,0084,Gustavo Garmendia (La Unión),Rural
+24,013,0538,Sabino del Obispo,Rural
+24,013,0570,Ejido la Hincada,Rural
+24,013,0507,Ojo de Agua,Rural
+24,014,0003,Ajuatitla Primera Sección,Rural
+24,014,0007,Ejido Calmecayo,Rural
+24,014,0011,Ixpatlach,Rural
+24,014,0013,El Jopoy,Rural
+24,014,0016,Las Mesas,Rural
+24,014,0017,Moyotla,Rural
+24,014,0020,Petlacoyo,Rural
+24,014,0022,El Sabino,Rural
+24,014,0057,Rancho Moyotla,Rural
+24,014,0008,Coamila,Rural
+24,014,0046,Maytla (El Ciruelo),Rural
+24,014,0029,Suchiaco,Rural
+24,014,0030,Tampuchón,Rural
+24,014,0033,Tazaquil,Rural
+24,014,0040,Comunidad Calmecayo,Rural
+24,014,0012,Ixtiamel,Rural
+24,014,0037,Tlapani,Rural
+24,014,0045,Barrio Tepetzintla Dos,Rural
+24,014,0068,Ejido Nuevo Calmecayo,Rural
+24,014,0023,San Andrés,Rural
+24,014,0067,Ajuatitla Segunda Sección,Rural
+24,014,0009,Colaltitla,Rural
+24,014,0025,San Pablo Primero,Rural
+24,014,0071,Tepotzuapa Dos Segunda Sección,Rural
+24,014,0002,Ajacaco,Rural
+24,014,0010,Cuilonico,Rural
+24,014,0043,Los Jobos Primera Sección,Rural
+24,014,0031,Tazaquil Ejido,Rural
+24,014,0077,Plan de los Jobos Segunda Sección,Rural
+24,014,0036,Tioamel,Rural
+24,014,0004,Amaxac,Rural
+24,014,0063,Totóatl,Rural
+24,014,0038,Tlaxco,Rural
+24,014,0001,Coxcatlán,Urbana
+24,015,0027,Lo de Acosta,Rural
+24,015,0046,San Rafael,Rural
+24,015,0051,IMMSA [Mina Tiro General],Rural
+24,015,0029,Miguel Hidalgo,Rural
+24,015,0023,Laborcilla,Rural
+24,015,0001,Charcas,Urbana
+24,015,0003,Aquiles Serdán,Rural
+24,015,0011,Paso del Mezquite (Cerro Blanco),Rural
+24,015,0016,Elorza,Rural
+24,015,0021,Noria de Gutiérrez (José María Morelos),Rural
+24,015,0025,Estación Laguna Seca,Rural
+24,015,0035,Presa de Santa Gertrudis,Rural
+24,015,0018,Francisco I. Madero,Rural
+24,015,0034,Pocitos,Rural
+24,015,0017,Emiliano Zapata (Las Canteras),Rural
+24,015,0075,Los Callejones,Rural
+24,015,0047,Santa Ana de Zaragoza,Rural
+24,015,0149,Cerro Prieto,Rural
+24,015,0056,Ignacio Aldama,Rural
+24,015,0002,Álvaro Obregón (Estación los Charcos),Rural
+24,015,0043,San Juan del Tuzal,Rural
+24,015,0052,La Trinidad,Rural
+24,015,0007,Cañada Verde,Rural
+24,015,0010,El Cedazo,Rural
+24,015,0053,Vicente Guerrero (Las Escobas),Rural
+24,015,0020,El Hospital,Rural
+24,015,0013,Coyotillos,Rural
+24,015,0031,Noria del Cerro Gordo,Rural
+24,015,0083,Fátima,Rural
+24,015,0019,Guadalupe Victoria,Rural
+24,015,0026,Lajas,Rural
+24,016,0062,Ejido Ampliación Velazco,Rural
+24,016,0003,Estación Auza,Rural
+24,016,0084,Antigua Reforma,Rural
+24,016,0001,Ebano,Urbana
+24,016,0005,Pujal Coy,Urbana
+24,016,0091,Ponciano Arriaga,Urbana
+24,016,0002,Ajinche Marland,Rural
+24,016,0036,Vichinchijol Nuevo,Rural
+24,016,0023,Reforma el Alto,Rural
+24,016,0022,Plan de Iguala,Rural
+24,016,0087,Aurelio Manrique,Rural
+24,016,0011,Estación Velazco,Rural
+24,017,0033,Palos Altos,Rural
+24,017,0053,San Cristóbal,Rural
+24,017,0130,La Media Nega,Rural
+24,017,0001,Guadalcázar,Urbana
+24,017,0003,El Aguaje de García,Rural
+24,017,0015,Estanque Blanco,Rural
+24,017,0016,El Fraile,Rural
+24,017,0048,Realejo,Rural
+24,017,0056,San Gregorio,Rural
+24,017,0066,San Martín (San Martín del Tanquito),Rural
+24,017,0057,San Ignacio,Rural
+24,017,0059,Colonia Agrícola San José,Rural
+24,017,0065,San Juan sin Agua,Rural
+24,017,0069,San Rafael de los Nietos,Rural
+24,017,0105,Los Ángeles N·mero Dos,Rural
+24,017,0049,San Agustín,Rural
+24,017,0050,San Antonio del Tulillo,Rural
+24,017,0051,San Antonio de Trojes,Rural
+24,017,0137,Crucero de Charco Cercado (El Parador),Rural
+24,017,0055,Soledad de la Biznaga,Rural
+24,017,0071,Santa Rita del Rucio,Rural
+24,017,0011,Charco Blanco,Rural
+24,017,0072,Santo Domingo,Rural
+24,017,0026,La Naranjita,Rural
+24,017,0020,El Jicote,Rural
+24,017,0042,Presa de Guadalupe,Rural
+24,017,0085,Puerta de Jes·s María (La Rosita),Rural
+24,017,0019,El Jaujal,Rural
+24,017,0018,El Huizache,Rural
+24,017,0113,La Campana,Rural
+24,017,0060,San José de Cervantes,Rural
+24,017,0013,Domingo Gámez,Rural
+24,017,0010,El Puerto de la Clavellina,Rural
+24,017,0027,La Negrita,Rural
+24,017,0032,El Oro,Rural
+24,017,0034,Peyote,Rural
+24,017,0036,La Pólvora,Rural
+24,017,0041,Pozo de Acuña,Rural
+24,017,0044,Pozo Colorado,Rural
+24,017,0078,La Ventana,Rural
+24,017,0073,San Francisco del Tulillo,Rural
+24,017,0029,La Noria de las Flores,Rural
+24,017,0007,Progreso,Rural
+24,017,0014,Entronque de Matehuala (El Huizache),Rural
+24,017,0005,Los Amoles,Rural
+24,017,0030,Norias del Refugio,Rural
+24,017,0052,San Carlos,Rural
+24,017,0009,Buenavista,Rural
+24,017,0017,La Hincada,Rural
+24,017,0024,El Milagro de Guadalupe,Rural
+24,017,0002,Ábrego,Rural
+24,017,0012,Charco Cercado,Rural
+24,017,0040,Pozas de Santa Ana,Rural
+24,017,0028,Las Negritas,Rural
+24,017,0031,N·ñez,Rural
+24,017,0097,Presita del Tepetate,Rural
+24,017,0047,Rancho Nuevo,Rural
+24,017,0046,El Quelital,Rural
+24,018,0012,Tantocoy Uno,Rural
+24,018,0024,Tzinejá Dos,Rural
+24,018,0026,Alaquich,Rural
+24,018,0030,Chununtzén Dos Sección Cuatro,Rural
+24,018,0033,Chununtzén Dos Sección Siete,Rural
+24,018,0034,Chununtzén Dos Sección Ocho,Rural
+24,018,0001,Huehuetlán,Urbana
+24,018,0003,Chununtzén Dos Sección Dos,Rural
+24,018,0005,Jilim Tantocoy Tres,Rural
+24,018,0006,El Nacimiento,Rural
+24,018,0008,La Pimienta,Rural
+24,018,0009,San José,Rural
+24,018,0011,Tanleab Uno,Rural
+24,018,0014,Tatacuatla,Rural
+24,018,0015,Tzinejá Uno,Rural
+24,018,0035,Chununtzén Dos Sección Nueve,Rural
+24,018,0002,Chununtzén Uno,Rural
+24,018,0013,Cruz Blanca,Rural
+24,018,0018,La Escalera,Rural
+24,018,0053,Complemento Chununtzén,Rural
+24,018,0064,Fraccionamiento Raul Olivares Santos,Rural
+24,018,0060,Barrio Francisco Villa,Rural
+24,018,0049,Tanleab Dos,Rural
+24,018,0028,Chununtzén Dos Sección Uno,Rural
+24,018,0037,Chununtzén Dos Sección Once,Rural
+24,018,0004,Huichihuayán,Rural
+24,018,0017,Los Pinos,Rural
+24,019,0024,El Limón,Rural
+24,019,0025,La Línea,Rural
+24,019,0029,Las Norias,Rural
+24,019,0035,La Presa,Rural
+24,019,0006,El Capulín,Rural
+24,019,0064,Carrizal de San Juan de Abajo,Rural
+24,019,0038,El Quelitalillo (El Quelital),Rural
+24,019,0013,El Charco de Piedra,Rural
+24,019,0040,La Rodada,Rural
+24,019,0032,Pinihuan (Río Pinihuan),Rural
+24,019,0028,El Mirador (El Pedregal),Rural
+24,019,0022,Laguna Colorada,Rural
+24,019,0001,Lagunillas,Urbana
+24,019,0014,Los Charcos,Rural
+24,019,0016,Encinillas,Rural
+24,019,0023,Laguna Verde,Rural
+24,019,0044,San Rafael,Rural
+24,019,0017,El Epazote,Rural
+24,020,0004,Arroyito del Agua,Rural
+24,020,0005,La Bonita,Rural
+24,020,0024,El Guerrero,Rural
+24,020,0041,Noria de los Castillos,Rural
+24,020,0050,Pastoriza,Rural
+24,020,0276,San Ramón (Campestre),Rural
+24,020,0052,San José de la Peña,Rural
+24,020,0058,Presa de la Higuera,Rural
+24,020,0013,Cerrito Blanco,Rural
+24,020,0244,Salitrillos del Refugio,Rural
+24,020,0085,San Miguel,Rural
+24,020,0215,Los Naranjos (Las Ladrilleras),Rural
+24,020,0060,Puerta del Refugio,Rural
+24,020,0011,Carbonera,Rural
+24,020,0064,Rancho Nuevo,Rural
+24,020,0006,Buenavista,Rural
+24,020,0008,La Caja,Rural
+24,020,0107,San Antonio de Zaragoza,Rural
+24,020,0053,Las Peñitas,Rural
+24,020,0288,El Ranchito,Rural
+24,020,0054,Piedra Blanca,Rural
+24,020,0048,Palmas,Rural
+24,020,0055,San José del Plan,Rural
+24,020,0297,Colonia la Plata,Rural
+24,020,0304,Los Sauces,Rural
+24,020,0240,Estanque del Padre Niño,Rural
+24,020,0090,Santa Ana de Arriba,Rural
+24,020,0315,El Palmar,Rural
+24,020,0001,Matehuala,Urbana
+24,020,0040,La Misión,Rural
+24,020,0032,La Luz,Rural
+24,020,0099,Sarabia (Encarnación de Arriba),Rural
+24,020,0100,Tanque Colorado,Rural
+24,020,0275,Las Heroínas Mexicanas,Rural
+24,020,0056,Los Pocitos,Rural
+24,020,0081,San José de los Sotoles,Rural
+24,020,0286,Colonia Lotificación Central,Rural
+24,020,0282,Colonia los Orozcos,Rural
+24,020,0318,Colonia Humberto Gutiérrez,Rural
+24,020,0172,San José de los Olivas,Rural
+24,020,0088,San Rafael,Rural
+24,020,0291,Fraccionamiento Real de las Camelias,Rural
+24,020,0285,Colonia Emiliano Zapata,Rural
+24,020,0078,San José de las Trojes,Rural
+24,020,0025,El Herrero,Rural
+24,020,0092,Santa Brígida,Rural
+24,020,0278,Colonia Valle de México,Rural
+24,020,0018,Encarnación de Abajo,Rural
+24,020,0007,Noria de la Cabra,Rural
+24,020,0070,San Antonio de los Castillo,Rural
+24,020,0057,Pozo de Santa Clara,Rural
+24,020,0098,San Vicente,Rural
+24,020,0075,San Gabriel,Rural
+24,020,0072,San Francisco de Caleros,Rural
+24,020,0029,La Joya,Rural
+24,020,0014,La Concepción,Rural
+24,020,0069,San Antonio de las Barrancas,Rural
+24,020,0105,Viborillas,Rural
+24,020,0079,San José de la Viuda (Estanque Blanco),Rural
+24,020,0034,Maravillas,Rural
+24,020,0067,Sacramento,Rural
+24,020,0037,El Mezquite,Rural
+24,020,0080,San José de los Guajes,Rural
+24,020,0020,Estanque de Agua Buena,Rural
+24,020,0023,Guadalupe de los Faz,Rural
+24,020,0012,El Carmen,Rural
+24,020,0112,El Refugio,Rural
+24,020,0093,Santa Cruz,Rural
+24,020,0003,Los Ángeles,Rural
+24,020,0096,Santa Lucía,Rural
+24,020,0228,Colonia Luis Echeverría,Rural
+24,021,0002,Agua Prieta,Rural
+24,021,0006,Benito Juárez,Rural
+24,021,0007,Buenavista,Rural
+24,021,0009,La Campana,Rural
+24,021,0016,Cerrito de Maravillas,Rural
+24,021,0017,Cerro Prieto,Rural
+24,021,0018,Colonia Álvaro Obregón,Rural
+24,021,0025,Derramaderos,Rural
+24,021,0028,Colonia Guadalupes,Rural
+24,021,0031,Huizachillos,Rural
+24,021,0036,Los Jiménez,Rural
+24,021,0039,Lechuguillas,Rural
+24,021,0041,La Loma,Rural
+24,021,0051,Los Moreno,Rural
+24,021,0053,Fracción Ojo de Pinto,Rural
+24,021,0055,El Palmar Primero,Rural
+24,021,0056,Palmar Segundo,Rural
+24,021,0060,Puerto de Providencia,Rural
+24,021,0062,Rincón del Porvenir,Rural
+24,021,0064,Rivera,Rural
+24,021,0066,Los Rodríguez,Rural
+24,021,0068,Salitrillo,Rural
+24,021,0074,Tanque Grande,Rural
+24,021,0076,Temaxcalillo,Rural
+24,021,0077,El Tepozán,Rural
+24,021,0081,Venadito,Rural
+24,021,0083,Estancita,Rural
+24,021,0087,Los Rojas,Rural
+24,021,0088,Los Vanegas,Rural
+24,021,0090,Colonia Progreso,Rural
+24,021,0097,La Cruz,Rural
+24,021,0104,San Salvador,Rural
+24,021,0115,El Carrillo,Rural
+24,021,0117,Colonia Molino del Carmen,Rural
+24,021,0119,Colonia Orilla del Río,Rural
+24,021,0073,Suspiro Picacho,Rural
+24,021,0026,Estanzuela,Rural
+24,021,0124,Cerrito de Estanzuela,Rural
+24,021,0058,Paso Blanco,Rural
+24,021,0095,Colonia Primero de Enero,Rural
+24,021,0001,Mexquitic de Carmona,Urbana
+24,021,0071,San Marcos (San Marcos Carmona),Urbana
+24,021,0050,Morelos,Rural
+24,021,0004,El Arbolito,Rural
+24,021,0008,La Cabra,Rural
+24,021,0054,Ojo Zarco de Arista,Rural
+24,021,0072,San Pedro Ojo Zarco,Rural
+24,021,0015,Cerrito de Jaral,Rural
+24,021,0019,Colonia Emiliano Zapata (El Chamizal),Rural
+24,021,0020,Ejido Miguel Hidalgo,Rural
+24,021,0022,Contreras,Rural
+24,021,0027,Ranchería de Guadalupe,Rural
+24,021,0042,Los López,Rural
+24,021,0046,Milpillas,Rural
+24,021,0005,Barbecho,Rural
+24,021,0075,La Tapona,Rural
+24,021,0086,Jacalillos,Rural
+24,021,0091,Salitrillo,Rural
+24,021,0092,Ejido Milpillas,Rural
+24,021,0093,Rincón de San José,Rural
+24,021,0127,Puerta de Tinajuela,Rural
+24,021,0112,El Olmo,Rural
+24,021,0141,Cruces y Carmona,Rural
+24,021,0131,Juan Manuel,Rural
+24,021,0079,Valle Umbroso,Rural
+24,021,0021,La Colorada,Rural
+24,021,0035,El Jaralito,Rural
+24,021,0061,Los Retes,Rural
+24,021,0024,Comunidad de Corte Segundo,Rural
+24,021,0003,Agua Señora,Rural
+24,021,0105,Pollitos,Rural
+24,021,0012,El Carrizal,Rural
+24,021,0069,San Agustín,Rural
+24,021,0013,Cenicera,Rural
+24,021,0014,El Cerrito,Rural
+24,021,0032,Ignacio Allende,Rural
+24,021,0065,El Rodeo,Rural
+24,021,0078,Los Uribe,Rural
+24,021,0085,Los Hernández,Rural
+24,021,0107,Cañaditas,Rural
+24,021,0122,Ejido de Moras,Rural
+24,021,0029,Guadalupe Victoria,Rural
+24,021,0070,San Francisco (Lomas de San Francisco),Rural
+24,021,0067,Fracción Salitrera,Rural
+24,021,0023,Comunidad Corte Primero,Rural
+24,021,0080,Los Vázquez,Rural
+24,021,0049,Las Moras,Rural
+24,021,0033,Paisanos,Rural
+24,021,0084,Los Coronado,Rural
+24,021,0047,Monte Obscuro,Rural
+24,021,0044,Maravillas,Rural
+24,021,0045,Matancillas,Rural
+24,022,0008,La Carpa,Rural
+24,022,0009,El Carpintero,Rural
+24,022,0049,San Francisco de la Dicha,Rural
+24,022,0051,San Isidro,Rural
+24,022,0120,El Amparo,Rural
+24,022,0044,El Rebalín,Rural
+24,022,0048,San Felipe,Rural
+24,022,0006,Barrancas,Rural
+24,022,0064,El Sotol,Rural
+24,022,0001,Moctezuma,Urbana
+24,022,0010,Codorniz,Rural
+24,022,0005,Arroyo Hondo,Rural
+24,022,0015,La Cueva,Rural
+24,022,0016,Charco del Lobo (Centro),Rural
+24,022,0020,Estanco,Rural
+24,022,0024,Ejido Juárez,Rural
+24,022,0042,Rancho Nuevo,Rural
+24,022,0050,San Ignacio,Rural
+24,022,0046,Salsipuedes,Rural
+24,022,0083,Las Matancillas,Rural
+24,022,0142,Las Alteñas,Rural
+24,022,0019,Estación de Enramada,Rural
+24,022,0036,Piedra Azul (La Piedra),Rural
+24,022,0032,Morterillos,Rural
+24,022,0047,San Antonio del Rul,Rural
+24,022,0057,Santa Catarina,Rural
+24,022,0093,Pozo del Carmen,Rural
+24,022,0113,El Pedernal,Rural
+24,022,0094,Pozos de Matanza,Rural
+24,022,0085,El Mulero,Rural
+24,022,0018,Ex-Hacienda de Enramada,Rural
+24,022,0033,El Naranjo,Rural
+24,022,0054,San José de Enramada,Rural
+24,022,0179,La Loma,Rural
+24,022,0090,Las Pilitas,Rural
+24,022,0004,Ancón,Rural
+24,022,0002,La Aduana,Rural
+24,022,0023,Juache,Rural
+24,022,0021,Garabatillo,Rural
+24,022,0027,La Luz,Rural
+24,022,0029,La Matanza,Rural
+24,022,0053,San José del Grito,Rural
+24,022,0025,Labor Vieja,Rural
+24,022,0038,La Presa,Rural
+24,022,0043,El Retiro,Rural
+24,022,0014,El C·camo,Rural
+24,022,0030,Estación Moctezuma,Rural
+24,022,0012,El Colorado,Rural
+24,022,0061,Santa Teresa,Rural
+24,022,0092,Pozo Blanco,Rural
+24,022,0031,Morados,Rural
+24,022,0039,Providencia,Rural
+24,022,0013,Cruces,Rural
+24,022,0011,Colonia Progreso,Rural
+24,022,0082,Malpaso,Rural
+24,023,0006,Amoladeras,Rural
+24,023,0015,Las Guapas,Rural
+24,023,0042,San Francisco,Rural
+24,023,0048,Vaqueros,Rural
+24,023,0035,El Ranchito,Rural
+24,023,0023,La Nueva Reforma,Rural
+24,023,0065,El Epazote,Rural
+24,023,0031,Pozo Bendito,Rural
+24,023,0038,El Sabinito,Rural
+24,023,0050,La Vieja,Rural
+24,023,0040,San Cristóbal,Rural
+24,023,0013,La Escondida,Rural
+24,023,0046,Tortugas,Rural
+24,023,0029,El Piruche,Rural
+24,023,0041,San Felipe de Jes·s Gamotes,Rural
+24,023,0030,Potrero del Carnero,Rural
+24,023,0049,Vicente Guerrero,Rural
+24,023,0001,Rayón,Urbana
+24,023,0022,El Nogalito,Rural
+24,023,0074,Crucero de Rayón,Rural
+24,023,0020,Morelos,Rural
+24,023,0018,La Luz,Rural
+24,023,0003,El Aguacate,Rural
+24,023,0004,Aguacatillos,Rural
+24,023,0011,Cerrito de la Cruz,Rural
+24,023,0025,Obregón (Estancitas),Rural
+24,023,0021,Nogales,Rural
+24,023,0010,Las Canoas,Rural
+24,023,0044,Tierras Coloradas,Rural
+24,023,0032,Puertecitos,Rural
+24,023,0026,El Pajarito,Rural
+24,024,0015,Buenavista,Rural
+24,024,0021,Cieneguillas,Rural
+24,024,0027,Chupaderos,Rural
+24,024,0031,El Freno,Rural
+24,024,0047,El Nacimiento,Rural
+24,024,0063,Plazuela,Rural
+24,024,0066,Rancho del Puente (Puente Prieto),Rural
+24,024,0071,El Riachuelo (El Caracol),Rural
+24,024,0080,San José de las Flores,Rural
+24,024,0453,Colonia María del Rosario (Puente del Carmen),Rural
+24,024,0064,Progreso,Rural
+24,024,0074,San Diego,Rural
+24,024,0030,La Escondida,Rural
+24,024,0024,El Coyote,Rural
+24,024,0040,La Loma,Rural
+24,024,0005,Agua Dulce,Rural
+24,024,0061,El Pescadito,Rural
+24,024,0084,San Rafaelito,Rural
+24,024,0160,Las Guayabitas,Rural
+24,024,0041,La Manga,Rural
+24,024,0151,Valle Florido,Rural
+24,024,0067,Puerto de Martínez,Rural
+24,024,0175,Charco Salado,Rural
+24,024,0121,La Providencia,Rural
+24,024,0045,Milpitas,Rural
+24,024,0008,Valle de Guadalupe,Rural
+24,024,0046,La Muralla,Rural
+24,024,0057,Paso de San Antonio,Rural
+24,024,0026,El Charco,Rural
+24,024,0073,San Bartolo,Rural
+24,024,0092,Tanque de San Juan,Rural
+24,024,0162,Agua Zarca (La Pila),Rural
+24,024,0093,La Tapona,Rural
+24,024,0079,San José Gallinas,Rural
+24,024,0094,Tecomates,Rural
+24,024,0002,Las Adjuntas,Rural
+24,024,0083,San Martín,Rural
+24,024,0044,Miguel Hidalgo,Rural
+24,024,0036,Ildefonso Turrubiartes (La Boquilla),Rural
+24,024,0016,Cañada Grande,Rural
+24,024,0078,San José de Canoas,Rural
+24,024,0470,Santa Elena,Rural
+24,024,0500,Colonia Buenos Aires,Rural
+24,024,0001,Rioverde,Urbana
+24,024,0042,Mesa del Salto,Rural
+24,024,0035,El Huizachal,Rural
+24,024,0048,El Nogalito,Rural
+24,024,0051,Ojo de Agua Seco,Rural
+24,024,0056,Paso de los Herreros (Paso de Guadalupe),Rural
+24,024,0180,El Garambullo,Rural
+24,024,0076,San Francisco de la Puebla,Rural
+24,024,0086,Santa Isabel,Rural
+24,024,0095,El Tule,Rural
+24,024,0316,Las Magdalenas,Rural
+24,024,0468,Anexo el Riachuelo,Rural
+24,024,0059,Pastora,Rural
+24,024,0100,El Zapote,Rural
+24,024,0081,San José del Tapanco,Rural
+24,024,0052,La Palmita,Rural
+24,024,0085,San Sebastián,Rural
+24,024,0324,La Aldea,Rural
+24,024,0336,Colonia Independencia,Rural
+24,024,0259,Colonia María Asunción del Barrio de los Ángeles,Rural
+24,024,0524,El Lago,Rural
+24,024,0535,Arturo González Garza,Rural
+24,024,0075,San Francisco,Rural
+24,024,0452,Ampliación Ejido el Jabalí (La Curva),Rural
+24,024,0068,Redención Nacional,Rural
+24,024,0039,La Laborcilla,Rural
+24,024,0077,Sanguijuela,Rural
+24,024,0058,Paso Real,Rural
+24,024,0014,Bordo Blanco,Rural
+24,024,0098,La Virgen,Rural
+24,024,0004,El Aguacate,Rural
+24,024,0009,Angostura (Los Canelos),Rural
+24,024,0037,El Jabalí,Rural
+24,024,0087,Santa Rita,Rural
+24,024,0089,San Vicente,Rural
+24,024,0018,El Capulín,Rural
+24,024,0072,El Sabinito,Rural
+24,025,0029,San Antonio de la Paz,Rural
+24,025,0030,San Evaristo,Rural
+24,025,0018,El Mezquite,Rural
+24,025,0001,Salinas de Hidalgo,Urbana
+24,025,0002,El Alegre,Rural
+24,025,0011,Diego Martín (Charco Colorado),Rural
+24,025,0017,La Mesilla,Rural
+24,025,0041,Colonia Zaragoza (Garabatillo),Rural
+24,025,0008,Conejillo,Rural
+24,025,0010,San Pedro de Alcántar,Rural
+24,025,0032,San Isidro Peñón Blanco,Rural
+24,025,0049,El Llano del Conejillo,Rural
+24,025,0053,Estación Peñón Blanco,Rural
+24,025,0056,Vicente Guerrero (La Cócona),Rural
+24,025,0024,Punteros (San José de Punteros),Rural
+24,025,0047,La Mantenedora,Rural
+24,025,0026,La Reforma,Rural
+24,025,0021,Palma Pegada,Rural
+24,025,0022,El Potro,Rural
+24,025,0028,Salitrillo,Rural
+24,025,0035,Santa María,Rural
+24,025,0038,El Tecolote,Rural
+24,025,0004,Bajío de los Encinos (Los Encinitos),Rural
+24,025,0003,Azogueros,Rural
+24,025,0079,Noria de Cañas,Rural
+24,025,0013,El Estribo,Rural
+24,025,0006,La Bolsa,Rural
+24,025,0023,Pozo Seco,Rural
+24,025,0007,Las Colonias (Colonia Juárez),Rural
+24,025,0058,Cuéllar,Rural
+24,026,0004,Lejem,Rural
+24,026,0006,Pokchich,Rural
+24,026,0009,Tanchahuil,Rural
+24,026,0010,Tan Jajnec,Rural
+24,026,0012,Xolol,Rural
+24,026,0037,El Crucero de Lejem,Rural
+24,026,0055,Colonia el Progreso,Rural
+24,026,0001,San Antonio,Urbana
+24,026,0008,Santa Martha,Rural
+24,026,0007,San Pedro,Rural
+24,026,0002,Cuéchod,Rural
+24,026,0046,Colonia Altamira,Rural
+24,026,0047,Al Tzájib,Rural
+24,026,0074,La Rosita,Rural
+24,026,0005,Pa'tnel,Rural
+24,026,0011,Tocoy,Rural
+24,027,0065,La Tinaja,Rural
+24,027,0050,El Pitahayo (Santa Cruz del Pitayo),Rural
+24,027,0016,La Cañada Santa Gertrudis,Rural
+24,027,0066,La Trinidad,Rural
+24,027,0001,San Ciro de Acosta,Urbana
+24,027,0040,El Ërgano,Rural
+24,027,0025,Codornices,Rural
+24,027,0042,Palo Alto de la Purísima Concepción,Rural
+24,029,0002,Las Acamayas,Rural
+24,029,0003,Acatitla,Rural
+24,029,0004,Acayo,Rural
+24,029,0014,El Carrizo,Rural
+24,029,0031,La Esperanza,Rural
+24,029,0032,El Frijolillo,Rural
+24,029,0045,Matlapita,Rural
+24,029,0065,El Potrero,Rural
+24,029,0071,Sabinito,Rural
+24,029,0075,Ejido Domingo,Rural
+24,029,0076,La Soledad,Rural
+24,029,0077,Taxicho,Rural
+24,029,0081,Tenexamel,Rural
+24,029,0083,Tepetate (Rancho Nuevo),Rural
+24,029,0084,Tepetlayo,Rural
+24,029,0098,Rancho Nuevo,Rural
+24,029,0099,Lindero,Rural
+24,029,0102,El Sacrificio,Rural
+24,029,0029,Domingo Zapoyo,Rural
+24,029,0086,Terrerito,Rural
+24,029,0073,San Luisito,Rural
+24,029,0191,Piedra Parada,Rural
+24,029,0064,Pitagio,Rural
+24,029,0108,El Rodeo de la Cruz,Rural
+24,029,0012,Los Bordones,Rural
+24,029,0199,Cuaxocoyo Uno Limontitla,Rural
+24,029,0049,La Mesa del Toro,Rural
+24,029,0109,La Pimienta,Rural
+24,029,0019,Cerro (Cerro de la Cruz),Rural
+24,029,0053,Ocuiltzapoyo,Rural
+24,029,0054,Octlamecayo,Rural
+24,029,0001,San Martín Chalchicuautla,Urbana
+24,029,0056,Buenavista (Palmar Alto),Rural
+24,029,0187,Rancho Nuevo,Rural
+24,029,0047,Mesa del Flojo,Rural
+24,029,0025,Chachatipa,Rural
+24,029,0035,El Huayal,Rural
+24,029,0066,Poza Redonda,Rural
+24,029,0068,Ejido la Puerta,Rural
+24,029,0080,Tempexquititla,Rural
+24,029,0207,Pemuche (Ejido Nuevo),Rural
+24,029,0030,Escuatitla,Rural
+24,029,0091,Xalamatitla,Rural
+24,029,0088,Totolteo,Rural
+24,029,0123,Barrio la Cruz,Rural
+24,029,0082,Tepemiche,Rural
+24,029,0011,Barranquillas (Tepetzintla),Rural
+24,029,0043,Manchoc,Rural
+24,029,0072,San José de las Adjuntas,Rural
+24,029,0153,El Higuito,Rural
+24,029,0037,Ixpatlach,Rural
+24,029,0006,Aguamolo,Rural
+24,029,0039,Lalaxo,Rural
+24,030,0009,Barranca de San Joaquín,Rural
+24,030,0018,Fracción Ocampo,Rural
+24,030,0001,San Nicolás Tolentino,Urbana
+24,030,0037,Potrero de Santa Gertrudis,Rural
+24,030,0010,Cañas,Rural
+24,030,0041,San José de Nogalitos,Rural
+24,030,0011,Carrizal de Guadalupe,Rural
+24,030,0021,Ignacio Allende,Rural
+24,030,0024,Laguna de Santo Domingo,Rural
+24,030,0019,Las Golondrinas,Rural
+24,030,0031,Ojo de Agua,Rural
+24,030,0022,Jagüey de San Francisco,Rural
+24,030,0029,Morenos,Rural
+24,030,0042,San Martín de Abajo,Rural
+24,030,0045,Santa Catarina,Rural
+24,031,0002,El Agarroso,Rural
+24,031,0006,Calabazas (San Francisco del Sauce),Rural
+24,031,0008,La Cuchilla,Rural
+24,031,0009,La Compuerta,Rural
+24,031,0014,Las Lagunitas,Rural
+24,031,0026,Puerta del Salto,Rural
+24,031,0028,San Antonio de los Guayabos,Rural
+24,031,0035,San Nicolás de Tampote,Rural
+24,031,0038,Tanl·,Rural
+24,031,0025,San Diego (Pueblo Viejo),Rural
+24,031,0036,Tanlacut (Pueblo de Tanlacut),Rural
+24,031,0046,Chacuala,Rural
+24,031,0019,El Mezquital,Rural
+24,031,0011,El Puente (Ejido Guayabos),Rural
+24,031,0044,El Coco,Rural
+24,031,0003,Anteojos,Rural
+24,031,0005,Caballos,Rural
+24,031,0089,El Carrizalillo,Rural
+24,031,0018,Mesa del Junco,Rural
+24,031,0022,Paso de Botello,Rural
+24,031,0021,La Parada,Rural
+24,031,0007,Carrizal Grande,Rural
+24,031,0031,San Pedro,Rural
+24,031,0030,San José,Rural
+24,031,0001,Santa Catarina,Urbana
+24,031,0058,El Pedregoso,Rural
+24,031,0032,Santa María Acapulco,Rural
+24,031,0048,La Encantada,Rural
+24,031,0004,La Barranca,Rural
+24,031,0013,Tanlacut (Labor Zapata),Rural
+24,032,0032,La Boquineta,Rural
+24,032,0040,Cañada del Cacao,Rural
+24,032,0121,Llano de Guadalupe,Rural
+24,032,0284,Fracción el Toro,Rural
+24,032,0338,Entronque a Tierra Nueva,Rural
+24,032,0001,Santa María del Río,Urbana
+24,032,0030,Bernalejo,Rural
+24,032,0043,Cañada de Yáñez,Rural
+24,032,0077,Enramadas,Rural
+24,032,0085,El Fuerte,Rural
+24,032,0091,Guanajuatito (Cerrito de la Cruz),Rural
+24,032,0142,El Molino Cinco Señores,Rural
+24,032,0108,La Labor del Río (Hacienda la Labor del Río),Rural
+24,032,0022,Balneario de Lourdes [Centro Vacacional],Rural
+24,032,0189,Peregrina de Arriba,Rural
+24,032,0219,Puerto de Victoria,Rural
+24,032,0266,El Soyate,Rural
+24,032,0052,El Cerrito,Rural
+24,032,0151,Ojo Caliente,Rural
+24,032,0047,La Cardona,Rural
+24,032,0251,San Juan Capistrán,Rural
+24,032,0376,Los Conos,Rural
+24,032,0106,Laborcilla,Rural
+24,032,0025,Barrancas del Pueblito (Cuesta Colorada),Rural
+24,032,0054,Cerro Prieto,Rural
+24,032,0048,El Carmen,Rural
+24,032,0188,Peregrina de Abajo,Rural
+24,032,0153,Ojo de Agua de las Flores,Rural
+24,032,0204,El Pueblito,Rural
+24,032,0260,Ejido la Pitahaya (Santo Domingo),Rural
+24,032,0299,La Yerbabuena,Rural
+24,032,0297,Villela,Rural
+24,032,0291,El Tule,Rural
+24,032,0517,Loma Bonita,Rural
+24,032,0166,Palmarito,Rural
+24,032,0243,Fracción Sánchez,Rural
+24,032,0275,El Tepozán,Rural
+24,032,0005,Agostadero de Santa Bárbara,Rural
+24,032,0026,Barranca,Rural
+24,032,0295,El Huizache,Rural
+24,032,0250,San José Alburquerque,Rural
+24,032,0020,Estancia de Atotonilco,Rural
+24,032,0053,Cerrito de Varas Blancas,Rural
+24,032,0416,El Álamo,Rural
+24,032,0420,Fracción Uno Ex-Hacienda Santo Domingo,Rural
+24,032,0201,Presa de Dolores,Rural
+24,033,0001,Santo Domingo,Urbana
+24,033,0002,El Arenal,Rural
+24,033,0022,San Antonio del Mezquite,Rural
+24,033,0019,Providencia,Rural
+24,033,0032,Socorro de Dios,Rural
+24,033,0023,San Francisco,Rural
+24,033,0067,La Ventura (El Grullo),Rural
+24,033,0025,San Juan del Salado,Rural
+24,033,0014,Illescas,Rural
+24,033,0028,Santa Clara,Rural
+24,033,0003,Bajío del Ciriaco,Rural
+24,033,0029,Santa Efigenia,Rural
+24,033,0006,Juan Sarabia (Centro Ovino),Rural
+24,033,0036,La Victoria,Rural
+24,033,0008,Cerritos de Bernal,Rural
+24,033,0013,Gámez,Rural
+24,033,0010,Congregación de Santo Domingo,Rural
+24,033,0020,El Sabino,Rural
+24,033,0024,San José Calihuey,Rural
+24,033,0030,Santa Matilde,Rural
+24,033,0033,El Tepetate,Rural
+24,033,0021,San Antonio Banderillas,Rural
+24,033,0004,El Bozal,Rural
+24,033,0018,Morelos,Rural
+24,033,0027,San Nicolás,Rural
+24,033,0051,La Yerbabuena,Rural
+24,033,0031,San Vicente Banderillas,Rural
+24,033,0037,Zancarrón,Rural
+24,033,0015,Jes·s María,Rural
+24,033,0039,Zaragoza (Pozo Salado),Rural
+24,034,0037,Tancojol Rincón Brujo,Rural
+24,034,0040,Tasajeras,Rural
+24,034,0251,Colonia Juárez (Nuevo Jomté),Rural
+24,034,0253,Ejido Miguel Hidalgo (Nuevo Jomté),Rural
+24,034,0050,Lázaro Cárdenas,Rural
+24,034,0098,Ejido la Bolsa Uno,Rural
+24,034,0111,Nuevo Jomté (Ezequiel Ahumada),Rural
+24,034,0235,Nuevo Jomté (Antiguo Tamuín Dos),Rural
+24,034,0047,Francisco Villa,Rural
+24,034,0250,Colonia el Carmen (Nuevo Jomté),Rural
+24,034,0062,Nuevo Jomté (El Sacrificio),Rural
+24,034,0110,Nuevo Jomté (Tambolón),Rural
+24,034,0107,Nuevo Jomté (Tasajeras Dos),Rural
+24,034,0108,Nuevo Jomté (La Bolsa Dos),Rural
+24,034,0074,San Juan de las Vegas,Rural
+24,034,0115,Nuevo Jomté (Nuevo May),Rural
+24,034,0109,Nuevo Jomté (Unión y Progreso),Rural
+24,034,0233,General León Martínez MHD,Rural
+24,034,0236,Nuevo Jomté (Colonia Hidalgo),Rural
+24,034,0013,El Chote,Rural
+24,034,0002,El Álamo,Rural
+24,034,0039,Tantojón,Rural
+24,034,0038,Tancuiche,Rural
+24,034,0028,San Francisco Cuayalab,Rural
+24,034,0001,San Vicente Tancuayalab,Urbana
+24,034,0034,El Sasub,Rural
+24,034,0112,Nuevo Jomté (El Ciruelar Dos),Rural
+24,034,0067,Flores Magón,Rural
+24,034,0204,Narciso Mendoza,Rural
+24,036,0015,Carrizalito de Trompeteros,Rural
+24,036,0027,El Huizachal,Rural
+24,036,0046,Pozo del Sauz,Rural
+24,036,0056,San José el Viejo (Huam·chil la Tigra),Rural
+24,036,0067,El Trigo,Rural
+24,036,0145,San Jerónimo,Rural
+24,036,0117,La Esperanza,Rural
+24,036,0055,San Andrés de los Limones,Rural
+24,036,0012,Capuchinas,Rural
+24,036,0077,El Nogalito,Rural
+24,036,0062,Santa Rosalía,Rural
+24,036,0098,Emiliano Zapata (La Boquilla),Rural
+24,036,0030,Laguna de Gómez,Rural
+24,036,0035,La Mojonera (La Mohonera),Rural
+24,036,0032,La Manzanilla,Rural
+24,036,0009,Cabezas,Rural
+24,036,0073,El Puerto de Rancho Nuevo,Rural
+24,036,0004,El Aguacate,Rural
+24,036,0148,Rancho Nuevo,Rural
+24,036,0051,Rincón de Ramírez,Rural
+24,036,0054,El Sabinito Quemado,Rural
+24,036,0010,Cafetal,Rural
+24,036,0113,Copalillos,Rural
+24,036,0013,El Carpintero,Rural
+24,036,0123,Tanque del Borrego,Rural
+24,036,0005,Agua Puerca,Rural
+24,036,0086,Huam·chil,Rural
+24,036,0002,Abras del Corozo,Rural
+24,036,0029,Kilómetro Cuatrocientos Setenta,Rural
+24,036,0061,Santa María Tampalatín,Rural
+24,036,0049,Puerto Verde,Rural
+24,036,0024,Damián Carmona,Rural
+24,036,0101,El Naranjo,Rural
+24,036,0068,Veinte de Noviembre,Rural
+24,036,0059,Santa Elena (El Retacho),Rural
+24,036,0036,Naranjito,Rural
+24,036,0017,Cebadilla,Rural
+24,036,0001,Tamasopo,Urbana
+24,036,0003,Agua Buena,Urbana
+24,036,0064,Tambaca,Urbana
+24,036,0028,El Huizache,Rural
+24,036,0026,La Gavia,Rural
+24,036,0020,Campamento Alfa (Los Cuates),Rural
+24,036,0022,Cuesta Blanca,Rural
+24,036,0023,El Chino,Rural
+24,036,0063,El Saucillo,Rural
+24,036,0041,La Palma (Villa de la Palma),Rural
+24,036,0058,San Nicolás de los Montes,Rural
+24,036,0008,Buenavista,Rural
+24,037,0010,Atehuac,Rural
+24,037,0021,Cerro Grande,Rural
+24,037,0022,Cuatzontitla,Rural
+24,037,0025,Coyol (Vega Larga),Rural
+24,037,0040,Barrio de Guadalupe,Rural
+24,037,0041,Guaxcuaco,Rural
+24,037,0043,Huazalingo,Rural
+24,037,0046,Ixteamel,Rural
+24,037,0047,Ixtla (Ixtla Santiago),Rural
+24,037,0049,La Laguna,Rural
+24,037,0056,Paguayo,Rural
+24,037,0074,San Francisco,Rural
+24,037,0076,Santa María Picula,Rural
+24,037,0079,Tacial,Rural
+24,037,0080,Tamacol,Rural
+24,037,0086,Tenexco,Rural
+24,037,0098,Tezontla,Rural
+24,037,0108,Xaltipa,Rural
+24,037,0114,El Chaparral,Rural
+24,037,0118,Encino Solo,Rural
+24,037,0125,Taxicho,Rural
+24,037,0130,Poxantla,Rural
+24,037,0164,Totectitla los Ciruelos,Rural
+24,037,0170,Cuajapa Tamán,Rural
+24,037,0172,Barrio la Vega Cuixcuatitla,Rural
+24,037,0174,Coahuica,Rural
+24,037,0211,Xomoco,Rural
+24,037,0216,Huichapa,Rural
+24,037,0217,Ixtlapalaco,Rural
+24,037,0222,Zapotitla,Rural
+24,037,0238,Barrio las Palmas,Rural
+24,037,0245,Limatitla,Rural
+24,037,0256,Tolapa (Tolapa Tamán),Rural
+24,037,0292,Rancho Quemado,Rural
+24,037,0303,Camarones,Rural
+24,037,0335,Tlaxcala,Rural
+24,037,0362,Coxotla,Rural
+24,037,0037,El Encinal,Rural
+24,037,0109,Xicotla,Rural
+24,037,0239,Pahuayo,Rural
+24,037,0082,Tamán,Rural
+24,037,0162,Tlalocuil,Rural
+24,037,0007,Amatitla Santiago,Rural
+24,037,0052,Mecachiquico,Rural
+24,037,0078,Santiago Centro,Rural
+24,037,0092,Tetitla,Rural
+24,037,0103,Tlamaya Santiago,Rural
+24,037,0169,Mecapala,Rural
+24,037,0334,Tlalixco,Rural
+24,037,0197,Tixcuayuca,Rural
+24,037,0091,San Antonio,Rural
+24,037,0013,Axhumol,Rural
+24,037,0148,El Carrizal,Rural
+24,037,0018,Cacateo,Rural
+24,037,0220,La Fortuna,Rural
+24,037,0062,Payantla,Rural
+24,037,0087,Tenextipa,Rural
+24,037,0093,Tetlama,Rural
+24,037,0370,Los Tamarindos,Rural
+24,037,0038,Enramaditas,Rural
+24,037,0398,Tlachiquilyacapa,Rural
+24,037,0096,Tezapotla,Rural
+24,037,0048,Ixtlapalaco,Rural
+24,037,0023,Cojolapa,Rural
+24,037,0419,San Andres,Rural
+24,037,0306,Los Cerritos,Rural
+24,037,0094,Texojol,Rural
+24,037,0202,Tilapa,Rural
+24,037,0221,Sukiamel,Rural
+24,037,0099,Tianguispicula,Rural
+24,037,0258,Tepetzintla,Rural
+24,037,0070,Rancho Nuevo,Rural
+24,037,0167,El Laurel,Rural
+24,037,0054,El Naranjal,Rural
+24,037,0029,La Cuchilla,Rural
+24,037,0122,Tecomate Uno,Rural
+24,037,0084,Temacuil,Rural
+24,037,0176,El Coyol San Francisco,Rural
+24,037,0067,El Platanito,Rural
+24,037,0030,Cuixcuatitla,Rural
+24,037,0008,Amatitla Tamán,Rural
+24,037,0106,Vega Larga,Rural
+24,037,0129,Mazatétl,Rural
+24,037,0105,Tlacuilola,Rural
+24,037,0166,Cuapilol,Rural
+24,037,0088,El Tepetate,Rural
+24,037,0006,Ahuehueyo,Rural
+24,037,0234,Las Cabañas,Rural
+24,037,0183,Las Estacas,Rural
+24,037,0190,El Ranchito,Rural
+24,037,0397,Tepeyac,Rural
+24,037,0057,Palictla,Rural
+24,037,0120,Limajyo,Rural
+24,037,0246,El Maguey,Rural
+24,037,0085,Temamatla,Rural
+24,037,0005,Aguazarca,Rural
+24,037,0001,Tamazunchale,Urbana
+24,037,0033,Chapulhuacanito,Urbana
+24,037,0139,El Piñal,Rural
+24,037,0059,Las Palomas,Rural
+24,037,0411,Barrio Benito Juárez,Rural
+24,037,0406,Colonia Doracely,Rural
+24,037,0028,Coaxocotitla,Rural
+24,037,0061,Papatlaco Santiago,Rural
+24,037,0285,Xochiayo Santiago,Rural
+24,037,0223,Barrio Progreso,Rural
+24,037,0352,Colonia Nezahualcóyotl,Rural
+24,037,0053,Mecatlán,Rural
+24,037,0385,San José Santiago,Rural
+24,037,0375,Emiliano Zapata,Rural
+24,037,0113,Zoquitipa,Rural
+24,037,0250,La Reforma (El Lindero),Rural
+24,037,0012,Atlajque,Rural
+24,037,0102,Tlalnepantla,Rural
+24,037,0058,El Palmito,Rural
+24,037,0425,La Ceiba,Rural
+24,037,0153,Buenos Aires Retroceso,Rural
+24,037,0035,Chilocuil Tamán,Rural
+24,037,0063,Pemucho,Rural
+24,038,0007,Cuayahual,Rural
+24,038,0024,Macuilocatl,Rural
+24,038,0026,La Mata,Rural
+24,038,0028,La Finca Miraflores,Rural
+24,038,0032,Ampliación Nuevo Hulero,Rural
+24,038,0045,Santomila,Rural
+24,038,0048,Tenextitla Dos,Rural
+24,038,0071,Lázaro Cárdenas,Rural
+24,038,0105,Tepetzintla,Rural
+24,038,0116,Doctor Salvador Nava Martínez (Nuevo Santa Rita),Rural
+24,038,0012,Chililillo,Rural
+24,038,0027,Las Mesas,Rural
+24,038,0017,El Huexco,Rural
+24,038,0052,Xochiayo,Rural
+24,038,0053,Xochicuatla,Rural
+24,038,0061,Barrio de Coyolo,Rural
+24,038,0039,Puyécatl,Rural
+24,038,0014,Chupadero,Rural
+24,038,0036,Palolco,Rural
+24,038,0100,Palantitla,Rural
+24,038,0040,El Refugio,Rural
+24,038,0013,Chimimexco,Rural
+24,038,0047,Tenextitla Uno,Rural
+24,038,0046,La Soledad,Rural
+24,038,0008,Los Cues,Rural
+24,038,0090,Barrio Viboritas,Rural
+24,038,0033,Nuevo Jalpilla,Rural
+24,038,0005,El Cedral,Rural
+24,038,0001,Tampacán,Urbana
+24,038,0020,Lagunillas,Rural
+24,038,0050,Totomoxtla (La Ceiba),Rural
+24,038,0018,El Hulero,Rural
+24,038,0011,Chiconamel,Rural
+24,039,0010,La Candelaria,Rural
+24,039,0012,El Carrizal,Rural
+24,039,0019,C'oyob T·jub,Rural
+24,039,0021,La Cruz Grande,Rural
+24,039,0059,La Palizada,Rural
+24,039,0092,Tut Tzen (Tiutzén),Rural
+24,039,0141,El Naranjo Tayabtzén (Tres Palmas),Rural
+24,039,0184,Colonia González Mazo,Rural
+24,039,0023,Coatixtalab,Rural
+24,039,0076,Río Florido,Rural
+24,039,0057,Comunidad el Naranjo,Rural
+24,039,0096,Tenexo,Rural
+24,039,0103,Las Víboras,Rural
+24,039,0090,Tajinab,Rural
+24,039,0098,Tonatico,Rural
+24,039,0004,Arroyo Grande,Rural
+24,039,0069,Punchumu,Rural
+24,039,0094,Tallabtzén,Rural
+24,039,0050,Mancornadero,Rural
+24,039,0210,Comunidad Tierra Blanca,Rural
+24,039,0120,Ejido el Puente (San Andrés),Rural
+24,039,0095,Teaxil,Rural
+24,039,0078,San Bartolo,Rural
+24,039,0101,Tzapuw Já (Tzapuja),Rural
+24,039,0025,El Chijol,Rural
+24,039,0136,San José de la Cruz,Rural
+24,039,0024,Cuatz Ajin (Coatzajín),Rural
+24,039,0016,Coaxinquila,Rural
+24,039,0026,Chiquinteco,Rural
+24,039,0001,Tampamolón Corona,Urbana
+24,039,0061,Paxquid,Rural
+24,039,0065,Pucté,Rural
+24,039,0091,Tamarindo Huasteco,Rural
+24,040,0133,Tampacoy,Rural
+24,040,0462,Ejido Graciano Sánchez,Rural
+24,040,0677,Nuevo Aserradero,Rural
+24,040,0781,Emiliano Zapata,Rural
+24,040,0047,La Fortaleza,Rural
+24,040,0072,Manuel Ávila Camacho,Rural
+24,040,0068,Loma Alta,Rural
+24,040,0086,Las Palmas,Rural
+24,040,0135,Estación Tamuín,Rural
+24,040,0085,El Palmar,Rural
+24,040,0117,San José de Limón,Rural
+24,040,0012,El Caracol,Rural
+24,040,0429,El Carrizo,Rural
+24,040,0678,Nuevo Caseral,Rural
+24,040,0160,Nuevo Ahuacatitla,Rural
+24,040,0006,Antiguo Tamuín,Rural
+24,040,0460,Ejido Velazco,Rural
+24,040,0433,Venustiano Carranza,Rural
+24,040,0132,Tamante,Rural
+24,040,0617,Luis Donaldo Colosio,Rural
+24,040,0386,Nuevo Aquismón,Rural
+24,040,0661,Loma del Palmar,Rural
+24,040,0372,El Centinela,Rural
+24,040,0676,Nueva Primavera,Rural
+24,040,0001,Tamuín,Urbana
+24,040,0157,Nuevo Tampaón,Urbana
+24,040,0121,Ejido Santa Elena,Rural
+24,040,0016,La Ceiba,Rural
+24,040,0139,La Tima (Fracción las Palmas),Rural
+24,040,0126,Santa Martha,Rural
+24,040,0318,Ejido los Huastecos,Rural
+24,041,0019,Monec,Rural
+24,041,0020,El May,Rural
+24,041,0102,Ejido el Tzajib,Rural
+24,041,0112,El Tiyóu,Rural
+24,041,0148,Primer Ayuntamiento (Agua Hedionda),Rural
+24,041,0154,Tres Cruces,Rural
+24,041,0160,Ejido Serapio Gutiérrez,Rural
+24,041,0128,San Isidro,Rural
+24,041,0015,El Jomte,Rural
+24,041,0030,Ejido San José Xilatzén,Rural
+24,041,0034,Santa Rosa,Rural
+24,041,0070,Cuitzabtzén,Rural
+24,041,0077,El Fortín May,Rural
+24,041,0018,Malilija,Rural
+24,041,0173,Barrio Cuaytzén Viejo,Rural
+24,041,0116,Nuevo Cueytzén,Rural
+24,041,0098,El Mante,Rural
+24,041,0004,Ejido la Argentina,Rural
+24,041,0023,El Pando,Rural
+24,041,0026,Anexo Quelabitad Calabazas,Rural
+24,041,0095,Quelabitad,Rural
+24,041,0115,Ejido Niños Héroes,Rural
+24,041,0029,San José del Tinto (La Gloria),Rural
+24,041,0076,Tizoapatz,Rural
+24,041,0010,Ejido la Cebadilla,Rural
+24,041,0016,La Labor,Rural
+24,041,0006,Ejido el Barrancón,Rural
+24,041,0011,Ejido la Concepción,Rural
+24,041,0037,Coromohom (Tocoymohom),Rural
+24,041,0036,Tancolol,Rural
+24,041,0001,Tanlajás,Urbana
+24,041,0117,Quelabitad Comunal,Rural
+24,041,0033,Santa Elena,Rural
+24,041,0003,Agualoja,Rural
+24,041,0053,San Benito,Rural
+24,041,0032,San Nicolás,Rural
+24,041,0108,Dhokob,Rural
+24,042,0016,Sagrada Familia,Rural
+24,042,0035,La Laguna,Rural
+24,042,0125,Colonia Marcelo de los Santos Fraga,Rural
+24,042,0003,El Basuche,Rural
+24,042,0011,Las Lomas,Rural
+24,042,0019,Tampicol,Rural
+24,042,0004,Buenavista,Rural
+24,042,0006,El Cerrito,Rural
+24,042,0001,Tanquián de Escobedo,Urbana
+24,042,0010,El Gavial,Rural
+24,043,0043,Huizachal,Rural
+24,043,0116,Barrio de Santiago,Rural
+24,043,0001,Tierra Nueva,Urbana
+24,043,0012,Paso del Balcón,Rural
+24,043,0039,Fracción de Hacienda Vieja,Rural
+24,043,0084,El Patol,Rural
+24,043,0090,El Piquín,Rural
+24,043,0104,El Salitre Grande,Rural
+24,043,0109,San Isidro,Rural
+24,043,0190,Presa la Muñeca,Rural
+24,043,0017,El Camarón,Rural
+24,043,0025,Cerro de la Virgen,Rural
+24,043,0108,San Gabriel (San Salvador),Rural
+24,044,0024,La Trueba,Rural
+24,044,0001,Vanegas,Urbana
+24,044,0007,Noria de los Cedros,Rural
+24,044,0012,La Sabanilla,Rural
+24,044,0018,San Juan de Vanegas,Rural
+24,044,0025,Vanegas de Abajo,Rural
+24,044,0004,El Gallo,Rural
+24,044,0013,El Salado (Estación el Salado),Rural
+24,044,0015,El Salto Colorado,Rural
+24,044,0005,Huertecillas,Rural
+24,044,0022,Tanque de López,Rural
+24,044,0009,La Pinta,Rural
+24,044,0023,El Tepetate,Rural
+24,044,0008,La Noria de Jes·s,Rural
+24,044,0026,Zaragoza (La Vaca),Rural
+24,044,0010,Presa de Santa Ana,Rural
+24,044,0021,San Vicente,Rural
+24,044,0011,La Punta (San José de la Punta),Rural
+24,044,0002,Cuatro Milpas,Rural
+24,044,0014,Salitrillos,Rural
+24,044,0020,Santa Teresa,Rural
+24,045,0011,Cañada Grande,Rural
+24,045,0013,Cerro Blanco,Rural
+24,045,0017,Cinco de Mayo,Rural
+24,045,0018,Coronado (Hacienda de Coronado),Rural
+24,045,0055,San Mateo,Rural
+24,045,0074,Barrio de Guadalupe Dos (Mexiquito),Rural
+24,045,0056,San Pedro,Rural
+24,045,0022,El Epazote,Rural
+24,045,0004,La Barranca Norte,Rural
+24,045,0126,Los Trejos,Rural
+24,045,0001,Venado,Urbana
+24,045,0008,Buenavista,Rural
+24,045,0025,Guanamé,Rural
+24,045,0033,El Matorral,Rural
+24,045,0050,El Salitre,Rural
+24,045,0062,El Sotol,Rural
+24,045,0016,Cinco de Febrero,Rural
+24,045,0118,Ejido el Salero,Rural
+24,045,0068,La Trinidad,Rural
+24,045,0014,La Ciénaga de Guanamé,Rural
+24,045,0059,Santa Rita,Rural
+24,045,0065,Tierra Blanca,Rural
+24,045,0043,El Ranchito,Rural
+24,045,0085,La Puerta,Rural
+24,045,0021,Don Diego,Rural
+24,045,0054,San Joaquín de las Flores,Rural
+24,045,0098,El Pocito,Rural
+24,045,0048,Los Remedios,Rural
+24,045,0030,El Laurel,Rural
+24,045,0037,Polocote de Arriba,Rural
+24,045,0049,El Salero,Rural
+24,045,0063,El Tecolote,Rural
+24,045,0023,El Grullo,Rural
+24,046,0002,Agua Gorda de los Patos,Rural
+24,046,0055,Puerto Espino,Rural
+24,046,0189,Colonia los Manueles,Rural
+24,046,0024,Franco,Rural
+24,046,0001,Villa de Arriaga,Urbana
+24,046,0019,Colonia Emiliano Zapata,Rural
+24,046,0025,Santa Rosa de Gallinas,Rural
+24,046,0083,El Tepetate,Rural
+24,046,0058,San Antonio,Rural
+24,046,0023,Francisco I. Madero,Rural
+24,046,0034,Colonia la Luz,Rural
+24,046,0040,El Mezquital,Rural
+24,046,0043,Colonia Palomas,Rural
+24,046,0047,Providencia,Rural
+24,046,0062,San Francisco,Rural
+24,046,0030,Colonia la Laborcilla,Rural
+24,046,0069,San Luis Gonzaga,Rural
+24,046,0101,Colonia Guadalupe Victoria (Fátima),Rural
+24,046,0042,Ojo de Agua de Juan Pérez,Rural
+24,046,0057,San Agustín,Rural
+24,046,0067,San José de la Purísima,Rural
+24,046,0205,Colonia Aquiles Córdova Morán,Rural
+24,046,0074,Santa Clara de los Bordos,Rural
+24,047,0013,Santa María del Rincón (El Guajolote),Rural
+24,047,0028,La Presa,Rural
+24,047,0041,San Bartolo,Rural
+24,047,0044,San José del Muerto,Rural
+24,047,0015,La Joya,Rural
+24,047,0034,Puerto de Magdalena,Rural
+24,047,0040,San Antonio de los Regalado,Rural
+24,047,0004,Arroyo Seco,Rural
+24,047,0051,Santa Rita de los Hernández,Rural
+24,047,0016,El Leoncito,Rural
+24,047,0046,San Judas,Rural
+24,047,0018,Magdalenas,Rural
+24,047,0014,Jarillas,Rural
+24,047,0060,Vallejos,Rural
+24,047,0039,San Antonio de la Ordeña,Rural
+24,047,0001,Villa de Guadalupe,Urbana
+24,047,0008,Santa Rosalía del Centro,Rural
+24,047,0020,El Matorral,Rural
+24,047,0021,Morelos,Rural
+24,047,0073,El Venadito,Rural
+24,047,0019,Santa Rosa la Masita,Rural
+24,047,0049,Santa Isabel (El Pozo),Rural
+24,047,0056,Zaragoza de Solís,Rural
+24,047,0029,La Presita,Rural
+24,047,0017,Llano de Jes·s María,Rural
+24,047,0070,Los Chilares,Rural
+24,047,0005,La Biznaga,Rural
+24,047,0050,Santa Rita de Casia,Rural
+24,047,0007,Bustamante (Las Trojas),Rural
+24,047,0035,Rancho Alegre,Rural
+24,047,0025,Palo Blanco,Rural
+24,047,0042,San Francisco,Rural
+24,047,0052,Santa Teresa,Rural
+24,047,0012,Guadalupito,Rural
+24,047,0006,Buenavista,Rural
+24,048,0006,El Jato,Rural
+24,048,0011,San Antonio de las Trojes,Rural
+24,048,0007,Laureles,Rural
+24,048,0001,Villa de la Paz,Urbana
+24,048,0002,Barbechos,Rural
+24,048,0003,La Boca,Rural
+24,048,0008,Limones,Rural
+24,048,0009,Los Nazarios,Rural
+24,050,0008,Boca de Santiago,Rural
+24,050,0009,La Boquilla (La Pequeña Irrigación),Rural
+24,050,0013,Cañón de Bledos,Rural
+24,050,0032,Ojo de Agua del Gato,Rural
+24,050,0064,Las Gualupas,Rural
+24,050,0068,Puente de Tierra,Rural
+24,050,0010,Cabras,Rural
+24,050,0002,El Álamo (Alamitos),Rural
+24,050,0045,Bajío de los Anillos (El Salto),Rural
+24,050,0001,Villa de Reyes,Urbana
+24,050,0025,Laguna de San Vicente,Urbana
+24,050,0043,El Rosario,Urbana
+24,050,0005,Arroyo Blanco,Rural
+24,050,0007,Bledos,Rural
+24,050,0019,Ejido Gogorrón (Ex-Hacienda de Gogorrón),Rural
+24,050,0023,Jes·s María,Rural
+24,050,0028,Los Macheros,Rural
+24,050,0030,Malinto,Rural
+24,050,0037,Presa San Agustín,Rural
+24,050,0040,La Puerta de San Antonio,Rural
+24,050,0042,Rodrigo,Rural
+24,050,0044,Las Rusias (Cuesillo),Rural
+24,050,0055,Socavón (El Carmen),Rural
+24,050,0058,La Ventilla,Rural
+24,050,0099,La Rinconeña,Rural
+24,050,0164,Los Pocitos,Rural
+24,050,0185,La Joyita,Rural
+24,050,0035,Pardo,Urbana
+24,050,0011,Estancia de Calderón,Rural
+24,050,0015,El Centenario,Rural
+24,050,0252,Valle de San Francisco,Rural
+24,050,0063,Plan de San Luis de Bledos,Rural
+24,050,0049,San Lorenzo,Rural
+24,050,0027,Machado,Rural
+24,050,0052,El Tejocote de San Miguel,Rural
+24,050,0057,La Loma del Tejocote (La Loma),Rural
+24,050,0071,Granja San Martín (Las Caleras),Rural
+24,050,0003,Alberto Carrera Torres,Rural
+24,050,0065,El Mirador,Rural
+24,050,0020,Guadiana,Rural
+24,050,0033,Presa del Organito,Rural
+24,050,0070,La Presa (La Presita),Rural
+24,050,0069,El Verde,Rural
+24,050,0053,Saucillo,Rural
+24,050,0014,Carranco,Rural
+24,050,0054,Saucillo de Bledos,Rural
+24,050,0034,Palomas,Rural
+24,050,0050,San Miguel,Rural
+24,050,0017,Emiliano Zapata,Rural
+24,051,0092,El Aljíber,Rural
+24,051,0032,El Pocito,Rural
+24,051,0001,Villa Hidalgo,Urbana
+24,051,0033,Presita de la Cruz,Rural
+24,051,0050,Silos,Rural
+24,051,0007,Corcovada,Rural
+24,051,0053,Tanque de Luna,Rural
+24,051,0060,Zapotillo,Rural
+24,051,0049,Sequedad,Rural
+24,051,0017,Lagunillas,Rural
+24,051,0036,Rincón del Refugio,Rural
+24,051,0021,Llano del Carmen,Rural
+24,051,0055,La Tapona,Rural
+24,051,0028,Paso Blanco,Rural
+24,051,0029,Pedrera del Tanquito,Rural
+24,051,0045,San Nicolás del Refugio,Rural
+24,051,0054,Tanque Nuevo,Rural
+24,051,0058,Veinte de Noviembre,Rural
+24,051,0062,El Coyote,Rural
+24,051,0010,Presa de Chancaquero,Rural
+24,051,0006,Corazones,Rural
+24,051,0034,La Redonda,Rural
+24,051,0057,Valle de San Juan,Rural
+24,051,0026,El Ojito,Rural
+24,051,0019,El Leoncito,Rural
+24,051,0043,San Lorenzo,Rural
+24,051,0040,San Ignacio,Rural
+24,051,0056,Trojes,Rural
+24,051,0059,Venaditos,Rural
+24,051,0052,Tanquito de San Francisco,Rural
+24,051,0016,Jagüey,Rural
+24,051,0031,Peotillos,Rural
+24,052,0007,Las Enramadas,Rural
+24,052,0010,Granjenal,Rural
+24,052,0006,Carrizal,Rural
+24,052,0016,Puerta del Río,Rural
+24,052,0012,Guaxcamá,Rural
+24,052,0001,Villa Juárez,Urbana
+24,052,0005,La Cardona,Rural
+24,052,0018,San José del Matorral,Rural
+24,052,0004,Buenavista,Rural
+24,052,0017,San Isidro,Rural
+24,052,0002,Agua del Medio,Rural
+24,052,0009,La Gavia,Rural
+24,052,0019,Santo Domingo,Rural
+24,052,0015,Palo Seco (El Gato),Rural
+24,052,0020,El Colorado,Rural
+24,052,0021,El Tejocote,Rural
+24,053,0002,Ahuacatitla,Rural
+24,053,0010,Tenexcalco (La Ceiba),Rural
+24,053,0024,Chicaxtitla,Rural
+24,053,0025,Chimalaco,Rural
+24,053,0026,Choteco,Rural
+24,053,0041,Picholco,Rural
+24,053,0043,La Purísima,Rural
+24,053,0044,Rancho Nuevo,Rural
+24,053,0049,Santa Fe Texacal (Centro Urbano),Rural
+24,053,0052,Tampochocho,Rural
+24,053,0053,Temalacaco,Rural
+24,053,0059,Xoloco,Rural
+24,053,0060,Zacayuhual,Rural
+24,053,0072,Copalo (Chalco),Rural
+24,053,0076,Nuevo Ayotoxco,Rural
+24,053,0090,Comunidad Picholco (Picholco Viejo),Rural
+24,053,0095,Fracción Ahuehueyo,Rural
+24,053,0020,Las Cuevas,Rural
+24,053,0055,Tenexio,Rural
+24,053,0005,Arroyo de en Medio,Rural
+24,053,0099,Barrio Santa Fe,Rural
+24,053,0004,El Aquichal,Rural
+24,053,0012,El Cerro,Rural
+24,053,0037,Matlalapa,Rural
+24,053,0019,Cuayo Cerro,Rural
+24,053,0062,Cuayo Buenavista,Rural
+24,053,0033,La Libertad (Ejido la Libertad),Rural
+24,053,0078,El Progreso,Rural
+24,053,0071,Cuayo (Chalco),Rural
+24,053,0083,Cuixcoatitla (Chalco),Rural
+24,053,0074,Ensenada (Chalco),Rural
+24,053,0080,Xocoyo (Chalco),Rural
+24,053,0007,Viejo Ayotoxco,Rural
+24,053,0081,Zojualo (Chalco),Rural
+24,053,0009,Calcahual,Rural
+24,053,0001,Axtla de Terrazas,Urbana
+24,053,0031,Jalpilla,Urbana
+24,053,0015,Comoca Ahuacatitla,Rural
+24,053,0120,La Garita,Rural
+24,053,0014,Coatzontitla,Rural
+24,053,0092,Ampliación Cuayo Buenavista,Rural
+24,053,0128,Colonia Guadalupe,Rural
+24,053,0075,Michotlayo (Chalco),Rural
+24,054,0010,El Balcón,Rural
+24,054,0013,El Cañón,Rural
+24,054,0026,El Jobo,Rural
+24,054,0032,Ejido Peña Blanca Limontitla,Rural
+24,054,0037,El Naranjal (La Ceiba),Rural
+24,054,0044,Peña Blanca,Rural
+24,054,0055,Puerto de Belén,Rural
+24,054,0071,La Silleta,Rural
+24,054,0074,Suchiayo,Rural
+24,054,0081,Tlamaya,Rural
+24,054,0103,La Barranca,Rural
+24,054,0105,Tlahuilapa,Rural
+24,054,0106,Buenavista,Rural
+24,054,0111,Las Crucitas,Rural
+24,054,0148,Manteyo,Rural
+24,054,0150,El Mirador,Rural
+24,054,0156,Petatillo,Rural
+24,054,0178,Cafetales,Rural
+24,054,0179,El Carrizal,Rural
+24,054,0192,La Gloria,Rural
+24,054,0198,La Joya de Tlaletla,Rural
+24,054,0225,San José,Rural
+24,054,0066,San Pedro Huitzquilico,Rural
+24,054,0247,Barrio San Pedro,Rural
+24,054,0002,Ahuayo,Rural
+24,054,0200,El Lagarto,Rural
+24,054,0088,Zacatipa,Rural
+24,054,0016,La Conchita,Rural
+24,054,0008,Apetzco,Rural
+24,054,0289,Marcelo de los Santos,Rural
+24,054,0073,Soledad de Zaragoza,Rural
+24,054,0119,El Retén,Rural
+24,054,0166,Santa Anita,Rural
+24,054,0006,Amayo de Zaragoza (Puerto de Amayo),Rural
+24,054,0045,Petatillo,Rural
+24,054,0038,Cuartillo Nuevo,Rural
+24,054,0049,Plan de Juárez,Rural
+24,054,0043,Pemoxco,Rural
+24,054,0053,Poxtla (La Empresa),Rural
+24,054,0062,El Sabino,Rural
+24,054,0112,Uxtuapan,Rural
+24,054,0122,Cuartillo Viejo,Rural
+24,054,0085,La Victoria,Rural
+24,054,0086,Ejido Xilitlilla,Rural
+24,054,0169,La Tinaja,Rural
+24,054,0173,Xaltipa,Rural
+24,054,0209,Los Otates,Rural
+24,054,0228,Temascales,Rural
+24,054,0224,Rincón la Joya,Rural
+24,054,0245,Barrio del Ajuate,Rural
+24,054,0227,La Targea,Rural
+24,054,0246,Barrio la Escuela,Rural
+24,054,0206,El Mirador,Rural
+24,054,0265,El Puerto de Potrerillos,Rural
+24,054,0065,San Antonio Xalcuayo Dos,Rural
+24,054,0181,Cerro Quebrado,Rural
+24,054,0035,Miramar Viejo,Rural
+24,054,0039,Ollita del Pino,Rural
+24,054,0024,Iztacapa,Rural
+24,054,0004,Ahuehueyo,Rural
+24,054,0147,Barrio San Isidro,Rural
+24,054,0222,El Rincón de Zacatipa,Rural
+24,054,0184,Barrio de Cristo Rey (Apetzco),Rural
+24,054,0040,Otlaxhuayo,Rural
+24,054,0078,La Tinaja,Rural
+24,054,0052,Potrerillos,Rural
+24,054,0152,Nuevo Miramar,Rural
+24,054,0174,Xilitlilla,Rural
+24,054,0185,La Cueva,Rural
+24,054,0285,Tierra y Libertad,Rural
+24,054,0284,Francisco I. Madero,Rural
+24,054,0001,Xilitla,Urbana
+24,054,0028,La Joya,Rural
+24,054,0047,Pitzóatl,Rural
+24,054,0082,Tlamimil,Rural
+24,054,0210,La Pagua,Rural
+24,054,0022,La Herradura,Rural
+24,054,0018,Cruztitla,Rural
+24,054,0003,Ahuacatlán de Jes·s,Rural
+24,054,0084,La Trinidad,Rural
+24,054,0223,El Rincón,Rural
+24,056,0080,Buenavista,Rural
+24,056,0024,El Mezquite,Rural
+24,056,0015,Guardarraya,Rural
+24,056,0166,Colonia Guadalupe,Rural
+24,056,0022,El Pozo,Rural
+24,056,0018,La Lajita,Rural
+24,056,0002,Villa de Arista,Urbana
+24,056,0014,La Escondida,Rural
+24,056,0005,Corazón de Jes·s,Rural
+24,056,0047,San Rafael,Rural
+24,056,0039,San Elías,Rural
+24,056,0184,Colonia Buenavista,Rural
+24,056,0188,Martín Gámez,Rural
+24,056,0074,San José del Arbolito,Rural
+24,056,0030,La Pelotera (Venta del Carmen),Rural
+24,056,0046,San Pedro,Rural
+24,056,0051,El Tajo,Rural
+24,056,0012,Derramaderos,Rural
+24,056,0101,La Cecilia,Rural
+24,056,0025,Milpas,Rural
+24,056,0035,Rincón de Leijas,Rural
+24,056,0011,El Charquito,Rural
+24,056,0037,Salitrillos,Rural
+24,057,0006,Atlamaxátl,Rural
+24,057,0008,Barrio de en Medio,Rural
+24,057,0012,Copalcoatitla (Copalo),Rural
+24,057,0018,La Isla,Rural
+24,057,0019,Nexcuayo,Rural
+24,057,0021,Papatlas,Rural
+24,057,0037,Xochititla,Rural
+24,057,0068,La Peñita (La Peña),Rural
+24,057,0074,Tlacohuaque,Rural
+24,057,0075,Tlaxco,Rural
+24,057,0077,Zacayo,Rural
+24,057,0088,Nexcuayo II,Rural
+24,057,0090,Zacarrincón,Rural
+24,057,0092,Colonia Apanco,Rural
+24,057,0050,Nuevo Tepetzintla,Rural
+24,057,0031,Texquitote Primero,Rural
+24,057,0076,Xaltipa Coaquentla,Rural
+24,057,0041,Barrio San Isidro (Tlajumpal),Rural
+24,057,0002,Aguacatitla,Rural
+24,057,0022,Pitzoteyo,Rural
+24,057,0040,Barrio de Tepetzintla (San Antonio),Rural
+24,057,0016,Ejido Matlapa Mestizos (Colonia Escalanar),Rural
+24,057,0020,Otlayo,Rural
+24,057,0071,Tezonquilillo,Rural
+24,057,0003,Ahuehueyo Primero Centro,Rural
+24,057,0027,Tancuilín,Rural
+24,057,0033,Los Tigres,Rural
+24,057,0029,Tepetzintla,Rural
+24,057,0009,Chalchitépetl,Rural
+24,057,0081,Paguayo Barrio Arriba,Rural
+24,057,0032,Texquitote Segundo,Rural
+24,057,0024,San Antonio,Rural
+24,057,0007,Barrio de Arriba,Rural
+24,057,0035,Tlamaxac,Rural
+24,057,0030,Terrero Colorado,Rural
+24,057,0042,Barrio San Juan (Tlajumpal),Rural
+24,057,0015,Cuichapa,Rural
+24,057,0034,Barrio San José (Tlajumpal),Rural
+24,057,0055,Xochicuatitla,Rural
+24,057,0091,Nequexpiloya,Rural
+24,057,0063,Barrio Chiltzapoyo,Rural
+24,057,0001,Matlapa,Urbana
+24,057,0010,Chalchocoyo,Urbana
+24,058,0003,Las Abritas,Rural
+24,058,0027,El Colorado,Rural
+24,058,0045,Maguey de Oriente,Rural
+24,058,0042,Kilómetro Cuarenta y Dos,Rural
+24,058,0072,El Sabinito,Rural
+24,058,0006,Los Álamos de Arriba,Rural
+24,058,0082,La Soledad,Rural
+24,058,0007,Los Álamos de Abajo,Rural
+24,058,0029,La Concepción,Rural
+24,058,0043,El Limonal,Rural
+24,058,0051,La Mutua,Rural
+24,058,0119,Colonia las Granjas,Rural
+24,058,0024,Chupaderos,Rural
+24,058,0028,Colonia Salto del Agua,Rural
+24,058,0073,El Sabinito Plan del Naranjo,Rural
+24,058,0055,Ojo de Agua de Tierra Nueva,Rural
+24,058,0047,Colonia el Meco,Rural
+24,058,0022,Los Charcos de Oriente,Rural
+24,058,0001,El Naranjo,Urbana
+24,058,0050,Minas Viejas,Rural
+24,058,0066,El Platanito,Rural
+24,058,0046,Maitinez,Rural
+24,049,0030,San Cipriano,Rural
+24,049,0112,Valle de San Juan (La Candelaria),Rural
+24,049,0114,El Toro,Rural
+24,049,0113,Las Escobas,Rural
+24,049,0015,Emiliano Zapata,Rural
+24,049,0150,San Pedro,Rural
+24,049,0001,Villa de Ramos,Urbana
+24,049,0005,El Barril,Urbana
+24,049,0012,Dulce Grande,Urbana
+24,049,0018,Hernández,Urbana
+24,049,0028,Salitral de Carrera,Urbana
+24,049,0055,Rancho Nuevo,Rural
+24,049,0029,San Pedro del Saltito,Rural
+24,049,0042,Yoliátl,Rural
+24,049,0032,San Francisco,Rural
+24,049,0043,El Zacatón,Urbana
+24,049,0010,La Concepción,Rural
+24,049,0022,El Naranjal,Rural
+24,049,0038,Santa Lucía,Rural
+24,049,0021,Lagunillas,Rural
+24,049,0069,Nuevo San Francisco,Rural
+24,049,0045,San Pablo,Rural
+24,049,0017,La Hediondilla,Rural
+24,049,0027,Pozo Blanco,Rural
+24,049,0059,Santa Ana,Rural
+24,049,0036,San Rafael,Rural
+24,049,0024,Noria del Gato,Rural
+24,049,0014,El Duraznillo,Rural
+24,049,0039,Sauz de Calera,Rural
+24,049,0019,La Herradura,Rural
+24,049,0034,San Martín,Rural
+24,049,0013,La Dulcita,Rural
+24,009,0010,Real del Potosí,Rural
+24,009,0025,Granjas de Portezuelo,Rural
+24,009,0004,Divisadero,Rural
+24,009,0013,Granjas de San Pedro,Rural
+24,009,0015,Granjas de San Francisco,Rural
+24,009,0011,El Tecolote,Rural
+24,009,0018,Los Gómez Lado Oriente,Rural
+24,009,0020,Planta del Carmen (El Ocho),Rural
+24,009,0006,Joyita de la Cruz,Rural
+24,009,0001,Cerro de San Pedro,Urbana
+24,009,0003,Cuesta de Campa,Rural
+24,009,0008,Portezuelo,Rural
+24,009,0028,Nuevo Amanecer,Rural
+24,009,0017,Granjas de la Florida,Rural
+24,009,0009,Nueva Zapatilla,Rural
+24,009,0005,Jes·s María,Rural
+24,009,0007,Monte Caldera,Rural
+24,009,0002,Calderón,Rural
+24,009,0022,La Sabanilla (Portezuelo),Rural
+24,009,0014,Huertas del Mezquite [Fraccionamiento],Rural
+24,028,0370,La Manta,Rural
+24,028,0600,Colonia de Comité Movimiento Amplio Popular,Rural
+24,028,0657,Joyas del Aguaje,Rural
+24,028,0621,Parque Industrial del Centro,Rural
+24,028,0541,Los Vargas,Rural
+24,028,0681,Union Antorchista,Rural
+24,028,0399,Tanque Uresti,Rural
+24,028,0257,La Morita,Rural
+24,028,0366,San Rafael N·mero Dos,Rural
+24,028,0509,Fracción los Graneros,Rural
+24,028,0371,Terroncitos (Los Contreras),Rural
+24,028,0372,El Chaparral,Rural
+24,028,0483,Rancho las Flores,Rural
+24,028,0355,Noria del Padre,Rural
+24,028,0244,El Malacate,Rural
+24,028,0562,Colonia la Unión,Rural
+24,028,0680,Nuevo México,Rural
+24,028,0420,Los Conejos,Rural
+24,028,0594,El Peñón,Rural
+24,028,0673,Palma China,Rural
+24,028,0252,Escalerillas,Urbana
+24,028,0264,La Pila,Urbana
+24,028,0287,Tepozán,Rural
+24,028,0291,Terrero Norte,Rural
+24,028,0295,Yerbabuena,Rural
+24,028,0398,El Hacha,Rural
+24,028,0401,Tanquecito de Mendoza,Rural
+24,028,0469,Colonia Insurgentes,Rural
+24,028,0565,El Charquillo (Capulines),Rural
+24,028,0347,Cerritos la Pila,Rural
+24,028,0402,Charco Blanco,Rural
+24,028,0568,Colonia los Salazares (Las Pulcatras),Rural
+24,028,0251,La Melada,Rural
+24,028,0393,Mesa de los Conejos,Rural
+24,028,0651,Colonia el Peñascal,Rural
+24,028,0217,Arroyos,Rural
+24,028,0235,El Jaralito,Rural
+24,028,0668,Colonia los Barrón,Rural
+24,028,0661,Colonia las Vegas (El Garambullal),Rural
+24,028,0296,Zamorilla,Rural
+24,028,0293,Los Urbanos,Rural
+24,028,0262,Peñasco,Rural
+24,028,0549,Fracción la Angostura Norte,Rural
+24,028,0256,Fracción Milpillas,Rural
+24,028,0216,Angostura,Rural
+24,028,0679,San Benito,Rural
+24,028,0611,El Ranchito,Rural
+24,028,0413,El Blanco,Rural
+24,028,0223,Cerritos de Zavala,Rural
+24,028,0248,Maravillas,Rural
+24,028,0448,La Sauceda,Rural
+24,028,0277,San Juanico Chico,Rural
+24,028,0394,Rinconada,Rural
+24,028,0375,Terrones (Sangre de Cristo),Rural
+24,028,0518,Palmar de las Flores (El Pozo Seis),Rural
+24,028,0362,Salitrera,Rural
+24,028,0236,Las Jarrillas,Rural
+24,028,0245,Las Manguitas,Rural
+24,028,0276,San José de Buenavista,Rural
+24,028,0233,La Caldera,Rural
+24,028,0240,Lechuguillas,Rural
+24,028,0247,El Manzo,Rural
+24,028,0222,El Cascarón,Rural
+24,028,0246,La Mantequilla,Rural
+24,028,0385,Cerro de la Virgen (San Juan de Bocas),Rural
+24,028,0214,El Ancón,Rural
+24,028,0365,Loma Prieta,Rural
+24,028,0218,Bocas (Estación Bocas),Rural
+24,028,0243,Macarenos,Rural
+24,028,0253,Mezquital,Rural
+24,028,0386,Unidad Benito Juárez (La Chora),Rural
+24,028,0230,Los García,Rural
+24,028,0458,Colonia la Estrella,Rural
+24,028,0447,El Santuario,Rural
+24,028,0278,San Juanico el Grande,Rural
+24,028,0369,González,Rural
+24,028,0221,Capulines,Rural
+24,028,0280,San Sebastián,Rural
+24,028,0290,El Terrero Sur,Rural
+24,028,0211,Fracción el Aguaje,Rural
+24,028,0391,Pozuelos,Rural
+24,028,0337,La Cantera,Rural
+24,028,0001,San Luis Potosí,Urbana
+24,028,0258,Noria de San José,Rural
+24,035,0229,Colonia Guadalupe,Rural
+24,035,0011,Enrique Estrada (La Concha),Rural
+24,035,0270,9 de Mayo,Rural
+24,035,0279,Privada Santa Maria,Rural
+24,035,0280,Llanos de San Pedro,Rural
+24,035,0281,Colonia Santa Anita,Rural
+24,035,0284,Colonia Tierra y Libertad,Rural
+24,035,0026,Rancho Nuevo,Urbana
+24,035,0005,General Cándido Navarro (Laguna Seca),Rural
+24,035,0015,El Huizache,Rural
+24,035,0039,Estación Techa,Rural
+24,035,0278,Valle de San Pedro,Rural
+24,035,0001,Soledad de Graciano Sánchez,Urbana
+24,035,0289,Fraccionamiento Punta Diamante,Rural
+24,035,0147,División del Norte Primera Sección,Rural
+24,035,0169,Jardines de San Pedro,Rural
+24,035,0292,Jardines de San Pedro Dos,Rural
+24,035,0275,Colonia del Bosque,Rural
+24,035,0276,Ejido de la Soledad,Rural
+24,035,0293,Valle de Palmas,Rural
+24,035,0239,Ejido los Gómez,Rural
+24,035,0020,Palma de la Cruz,Rural
+24,035,0097,Ejido el Zapote,Rural
+24,035,0040,La Tinaja (Ex-Hacienda la Tinaja),Rural
+24,035,0025,La Purísima (Fracción la Purísima),Rural
+24,035,0042,Estación Ventura,Rural
+24,035,0038,Ejido Soledad,Rural
+24,035,0050,Potrero de Adentro,Rural
+24,035,0100,Los Gómez,Rural
+24,035,0051,San José del Barro,Rural
+24,035,0045,El Zapote,Rural
+24,035,0291,Alpes de San Pedro,Rural
+24,055,0010,Arroyo Hondo,Rural
+24,055,0036,La Estancia,Rural
+24,055,0049,Kilómetro 58,Rural
+24,055,0078,Ranchito de los Rivera,Rural
+24,055,0087,San José de Gómez,Rural
+24,055,0026,Coahuila,Rural
+24,055,0066,Los Pilares,Rural
+24,055,0095,Texas,Rural
+24,055,0176,Colonia el Pedregal,Rural
+24,055,0140,Pilar de Guadalupe,Rural
+24,055,0044,El Jaralito,Rural
+24,055,0001,Villa de Zaragoza,Urbana
+24,055,0081,Rincón de Santa Eduwiges,Rural
+24,055,0186,Longoria,Rural
+24,055,0012,La Calera,Rural
+24,055,0089,Santo Domingo,Rural
+24,055,0061,La Parada del Zarcido,Rural
+24,055,0017,El Carmen,Rural
+24,055,0037,Estanco del Carmen,Rural
+24,055,0042,Independencia (Patol),Rural
+24,055,0084,La Salitrera,Rural
+24,055,0043,Jamay,Rural
+24,055,0004,Agua Zarca,Rural
+24,055,0005,Alberca de la Cruz,Rural
+24,055,0060,Parada de los Martínez,Rural
+24,055,0009,Arreates,Rural
+24,055,0035,La Esperanza,Rural
+24,055,0021,Cerro Gordo,Rural
+24,055,0101,Xoconoxtle,Rural
+24,055,0131,Valle de los Fantasmas,Rural
+24,055,0093,Emiliano Zapata (El Tepozán),Rural
+24,055,0086,San Francisco,Rural
+24,059,0027,Los Gómez,Rural
+24,059,0007,Bosque de las Flores,Rural
+24,059,0024,Laguna de Santa Rita,Urbana
+24,059,0013,El Montecillo,Rural
+24,059,0041,San Nicolás de los Jassos,Urbana
+24,059,0005,Barrio Casanova,Rural
+24,059,0033,Panalillo,Rural
+24,059,0021,La Libertad (Pozos),Rural
+24,059,0008,Bosques la Florida,Rural
+24,059,0042,Tanque el Jagüey,Rural
+24,059,0001,Villa de Pozos,Urbana

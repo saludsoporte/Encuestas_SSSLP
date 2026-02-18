@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EncuestaApp.Views.LoginPage"
+             >
+    <VerticalStackLayout Margin="0"  VerticalOptions="Center" Padding="20" Spacing="10">
+        <Grid Margin="0">
+            <Image Source="franja2.png"  Aspect="AspectFill"  HeightRequest="50" />
+        </Grid>
+
+
+        <Image Source="logo.png" Aspect="AspectFill" WidthRequest="250" HeightRequest="200" />
+
+        <Label Text="🔐 Iniciar Sesión" 
+            FontSize="24" 
+            HorizontalOptions="Center" 
+            FontAttributes="Bold"
+            />
+
+        <Entry x:Name="UserEntry" 
+               Placeholder="Usuario" 
+               Keyboard="Default"/>
+
+        <Grid ColumnDefinitions="*,Auto"
+      VerticalOptions="Center">
+
+            <Entry x:Name="PasswordEntry"
+           Grid.Column="0"
+           Placeholder="Contraseña"
+           IsPassword="True" />
+
+            <ImageButton
+    x:Name="TogglePasswordButton"
+    Grid.Column="1"
+    BackgroundColor="Transparent"
+    WidthRequest="36"
+    HeightRequest="36"
+    Padding="6"
+    Clicked="OnTogglePasswordClicked">
+
+                <ImageButton.Source>
+                    <FontImageSource
+            Glyph="&#xe8f5;"
+            FontFamily="MaterialIcons"
+            Size="22"
+            Color="{AppThemeBinding Light=Black, Dark=White}" />
+                </ImageButton.Source>
+
+            </ImageButton>
+
+        </Grid>
+
+        <Button Text="Ingresar" 
+                Clicked="OnLoginClicked" 
+                BackgroundColor="#055A1C" 
+                TextColor="White"/>
+
+        <!-- Mostrar versión -->
+        <Label 
+                x:Name="lblVersion"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                FontSize="12"
+                TextColor="Gray"
+                Margin="0,20,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,40 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EncuestaApp.Views.ConfiguracionPage"
+             Title="Configuración">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="URL del Servidor"
+               FontSize="16"
+               FontAttributes="Bold"
+               Margin="0,0,0,5"/>
+
+        <Entry x:Name="ServidorEntry"
+               Placeholder="https://mi-servidor.com/api"
+               Keyboard="Url"/>
+
+        <Label Text="Tamaño del lote para sincronización"
+               FontSize="16"
+               FontAttributes="Bold"
+               Margin="0,0,0,5"/>
+
+        <Entry x:Name="BatchEntry"
+           Keyboard="Numeric"
+           Placeholder="Ingrese tamaño del lote (ej. 5)" />
+
+        <Label Text="Identificador del dispositivo"
+               FontSize="16"
+               FontAttributes="Bold"
+               Margin="0,0,0,5"/>
+
+        <!-- Mostramos DeviceId en modo solo lectura -->
+        <Entry x:Name="DeviceIdEntry"
+               IsReadOnly="True"
+               FontSize="14"
+               TextColor="Gray"/>
+
+        <Button Text="Guardar"
+                Clicked="OnGuardarClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
