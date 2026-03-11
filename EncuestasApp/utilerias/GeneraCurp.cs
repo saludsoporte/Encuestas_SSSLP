@@ -41,17 +41,13 @@ namespace EncuestasApp.utilerias
 "J","J.","JOSE","JOSÉ","M","M.","MA","MA.","MARIA","MARÍA"
 };
 
-        public static string GenerarCurp(
-     string nombre,
-     string apellido1,
-     string apellido2,
-     DateTime fechaNacimiento,
-     string genero,
-     string entidadCodigo)
+        public static string GenerarCurp(string nombre,string apellido1,string apellido2,DateTime fechaNacimiento,string genero,string entidadCodigo)
         {
             nombre = Limpiar(nombre);
             apellido1 = Limpiar(apellido1);
             apellido2 = Limpiar(apellido2);
+  
+            
 
             string porciones = GenerarPorciones(apellido1, apellido2, nombre);
 
@@ -94,9 +90,17 @@ namespace EncuestasApp.utilerias
 
         private static string Limpiar(string texto)
         {
-            texto = texto.ToUpper().Trim();
-            texto = Regex.Replace(texto, @"[^A-ZÑ\s]", "");
-            return texto;
+            if (string.IsNullOrWhiteSpace(texto))
+            {
+                return "";
+            }
+            else
+            {
+                texto = texto.ToUpper().Trim();
+                texto = Regex.Replace(texto, @"[^A-ZÑ\s]", "");
+                return texto;
+            }
+                
         }
 
         private static string ObtenerPrimerLetraYVocal(string texto)
@@ -144,13 +148,7 @@ namespace EncuestasApp.utilerias
 
             curp = curp.ToUpper();
 
-            string curpGenerada = GenerarCurp(
-                nombre,
-                apellido1,
-                apellido2,
-                fechaNacimiento,
-                genero,
-                entidadCodigo);
+            string curpGenerada = GenerarCurp(nombre,apellido1,apellido2,fechaNacimiento,genero,entidadCodigo);
 
             // Comparar solo hasta posición 16
             return curp.Substring(0, 16) ==

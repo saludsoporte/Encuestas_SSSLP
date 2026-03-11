@@ -30,7 +30,7 @@ public partial class EncuestaPage : ContentPage
     {
 
         InitializeComponent();
-        ColoniaManualEntry.IsVisible = false;
+        ColoniaManualContainer.IsVisible = false;
         SeccionManualEntry.IsVisible = false;
         RespiratorioPicker.SelectedIndex = 0;
         PsicologicoPicker.SelectedIndex = 0;
@@ -118,7 +118,7 @@ public partial class EncuestaPage : ContentPage
         {
             bool aceptarCurp = await DisplayAlert(
        "Confirmar",
-       "Se detecto que los nombres o apellidos no coincide con la curp ¿Quieres continuar de todos modos?",
+       "Se detecto que los datos de identidad (nombre/género/fecha/estado) no coincide con la curp ¿Quieres continuar de todos modos?",
        "Sí", "Corregir");
 
             if (!aceptarCurp)
@@ -830,7 +830,7 @@ public partial class EncuestaPage : ContentPage
             DeviceId = DeviceService.GetDeviceId(),
 
             // 1. Datos Generales del paciente
-            NombreCompleto = NombreEntry.Text.Trim() +" "+ pApellidoEntry.Text.Trim() + " " + sApellidoEntry.Text.Trim(),
+            NombreCompleto =$"{NombreEntry.Text?.Trim()} {pApellidoEntry.Text?.Trim()} {sApellidoEntry.Text?.Trim()}".Trim(),
             Edad = int.TryParse(EdadEntry.Text, out int edad) ? edad : 0,
             Genero = GeneroPicker.SelectedItem?.ToString() ?? "",
             FechaNacimiento = FechaNacimientoEntry.Date,
@@ -1147,12 +1147,12 @@ public partial class EncuestaPage : ContentPage
             if (TieneMascotasPicker.SelectedItem is not null)
                 if (TieneMascotasPicker.SelectedItem.ToString() == "Sí")
                 {
-                    EstanVacunadosEntry.IsVisible = true;
+                    EstanVacunadosContainer.IsVisible = true;
                     textEstanVacunadosEntry.IsVisible = true;
                 }
                 else
                 {
-                    EstanVacunadosEntry.IsVisible = false;
+                    EstanVacunadosContainer.IsVisible = false;
                     textEstanVacunadosEntry.IsVisible = false;
                 }
             
@@ -1214,7 +1214,7 @@ public partial class EncuestaPage : ContentPage
         }
         catch (Exception ex)
         {
-            await DisplayAlert("Aviso", "No se pudo obtener la ubicación: " + ex.Message, "OK");
+            await DisplayAlert("Aviso", "Hubo un error al guardar la encuesta: " + ex.Message, "OK");
         }
         finally
         {
@@ -1682,11 +1682,11 @@ public partial class EncuestaPage : ContentPage
             var selected = picker.Items[selectedIndex];
             if (selected == "Sí")
             {
-                EstanVacunadosEntry.IsVisible = true;
+                EstanVacunadosContainer.IsVisible = true;
             }
             else
             {
-                EstanVacunadosEntry.IsVisible = false;
+                EstanVacunadosContainer.IsVisible = false;
             }          
         }
     }
@@ -2162,47 +2162,7 @@ public partial class EncuestaPage : ContentPage
         }
     }
 
-    /*private async void OnCodigoPostalChanged(object sender, TextChangedEventArgs e)
-    {
-        if (string.IsNullOrWhiteSpace(e.NewTextValue) || e.NewTextValue.Length != 5)
-            return;
-
-        var cp = e.NewTextValue.Trim();
-
-        _registrosPorCP = await _db.GetColoniasByCPAsync(cp);
-
-        if (_registrosPorCP == null || _registrosPorCP.Count == 0)
-        {
-            // Limpiar todo
-            ColoniaSelectorEntry.Text = string.Empty;
-            MunicipioPicker.ItemsSource = null;
-            SeccionPicker.ItemsSource = null;
-
-            ColoniaNoEncontradaCheck.IsChecked = false;
-            SeccionNoEncontradaCheck.IsChecked = false;
-
-            return;
-        }
-
-        // 🔹 MUNICIPIO (único)
-        _municipiosPorCP = _registrosPorCP
-    .GroupBy(x => new { x.Municipio, x.cve_mun })
-    .Select(g => g.First())
-    .OrderBy(x => x.Municipio)
-    .ToList();
-
-        MunicipioPicker.ItemsSource = _municipiosPorCP
-            .Select(x => x.Municipio)
-            .ToList();
-
-        MunicipioPicker.SelectedIndex = 0;
-        // var municipioSeleccionado = _municipiosPorCP[0];
-        await CargarLocalidadesPorMunicipioAsync(_municipiosPorCP[0].cve_mun);
-        // 🔹 LIMPIAR SELECCIONES PREVIAS
-        ColoniaSelectorEntry.Text = string.Empty;
-        SeccionPicker.ItemsSource = null;
-    }*/
-
+ 
     private async void OnCodigoPostalChanged(object sender, TextChangedEventArgs e)
     {
         if (string.IsNullOrWhiteSpace(e.NewTextValue) || e.NewTextValue.Length != 5)
@@ -2213,17 +2173,7 @@ public partial class EncuestaPage : ContentPage
         _registrosPorCP = await _db.GetColoniasByCPAsync(cp);
 
         if (_registrosPorCP == null || _registrosPorCP.Count == 0)
-        {/*
-            ColoniaSelectorEntry.Text = string.Empty;
-            MunicipioPicker.ItemsSource = null;
-            SeccionPicker.ItemsSource = null;
-
-            ColoniaNoEncontradaCheck.IsChecked = false;
-            SeccionNoEncontradaCheck.IsChecked = false;
-
-            _municipiosPorCP = null;
-            _localidadesActuales = null;
-            _cveMunSeleccionado = null;*/
+        {
             ColoniaSelectorEntry.Text = string.Empty;
             SeccionPicker.ItemsSource = null;
 
@@ -2281,7 +2231,7 @@ public partial class EncuestaPage : ContentPage
         ColoniaSelectorEntry.IsEnabled = !manual;
 
         // Mostrar / ocultar captura manual
-        ColoniaManualEntry.IsVisible = manual;
+        ColoniaManualContainer.IsVisible = manual;
 
         if (manual)
         {
@@ -2296,7 +2246,7 @@ public partial class EncuestaPage : ContentPage
         else
         {
             ColoniaSelectorEntry.IsVisible = true;
-            ColoniaManualEntry.IsVisible = false;
+            ColoniaManualContainer.IsVisible = false;
             // Limpia captura manual
             ColoniaManualEntry.Text = string.Empty;
         }
@@ -2351,31 +2301,7 @@ public partial class EncuestaPage : ContentPage
         }
     }
 
-    /*private async void OnMunicipioChanged(object sender, EventArgs e)
-    {
-        if (MunicipioPicker.SelectedIndex < 0)
-            return;
-
-        var municipioSeleccionado = _municipiosPorCP[MunicipioPicker.SelectedIndex];
-
-        int cveMun = municipioSeleccionado.cve_mun;
-
-        await CargarLocalidadesPorMunicipioAsync(cveMun);
-    */
-    /*
-    private async void CargarMunicipioDesdeCP()
-    {
-        var registro = _registrosPorCP.FirstOrDefault();
-        if (registro == null)
-            return;
-
-        MunicipioEntry.Text = registro.Municipio;
-
-        _cveMunSeleccionado = registro.cve_mun; 
-
-        await CargarLocalidadesPorMunicipioAsync(_cveMunSeleccionado);
-    }*/
-
+   
 
     private void CargarSeccionesPorColonia(string coloniaSeleccionada)
     {
@@ -2821,6 +2747,38 @@ public partial class EncuestaPage : ContentPage
     {
         LoadingOverlay.IsVisible = mostrar;
         this.IsEnabled = !mostrar; // bloquea toda la página
+    }
+
+    private async void OnColoniaInfoTapped(object sender, EventArgs e)
+    {
+        await DisplayAlert(
+            "Ejemplo de captura",
+            "Ejemplos correctos:\n\n• Balcones del Valle\n• San Ángel\n\nEvite abreviaturas como:\nB. del Valle\nCol. Balcoles del Valle.\n fracc. Himno Nacional",
+            "Entendido");
+    }
+
+    private async void OnCalleInfoTapped(object sender, EventArgs e)
+    {
+        await DisplayAlert(
+            "Cómo capturar la calle",
+            "Debe incluir el tipo de vialidad.\n\n" +
+            "Ejemplos correctos:\n\n" +
+            "• Avenida Himno Nacional\n" +
+            "• Calle 5 de Mayo\n" +
+            "• Boulevard Españita\n\n" +
+            "Para casos foraneos capturar Fuera del Estado\n" +
+            "Incorrecto: Himno Nacional",
+            "Entendido");
+    }
+
+    private async void OnVacunasInfoTapped(object sender, EventArgs e)
+    {
+        await DisplayAlert(
+            "Ejemplo de captura",
+            "Ejemplos correctos:\n\n" +
+            "• 3 de 4 perros vacunados 4 de 4 perros esterilizados\n" +
+            "• 0 de 2 perros vacunados 1 de 2 perros esterilizados 1 de 1 gato vacunados 0 de 1 gato esterilizados",
+            "Entendido");
     }
 
 }

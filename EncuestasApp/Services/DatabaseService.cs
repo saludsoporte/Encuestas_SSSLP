@@ -163,6 +163,21 @@ public class DatabaseService
 
     public async Task<List<CodigoPostalCat>> GetColoniasByCPAsync(string codigoPostal)
     {
+        if (!codigoPostal.StartsWith("78") && !codigoPostal.StartsWith("79"))
+        {
+            return new List<CodigoPostalCat>
+        {
+            new CodigoPostalCat
+            {
+                Codigo = codigoPostal,
+                Colonia = "FUERA DEL ESTADO",
+                Municipio = "FUERA DEL ESTADO",
+                cve_mun = "9999",
+                SeccionElectoral = "9999"
+            }
+        };
+        }
+
         return await _database
             .Table<CodigoPostalCat>()
             .Where(x => x.Codigo == codigoPostal)
@@ -219,6 +234,18 @@ public class DatabaseService
 
     public async Task<List<Localidad>> GetLocalidadesByCveMunAsync(String cveMun)
     {
+        if (cveMun == "9999")
+        {
+            return new List<Localidad>
+        {
+            new Localidad
+            {
+                Cve_Mun = "9999",
+                LocalidadNombre = "FUERA DEL ESTADO"
+            }
+        };
+        }
+
         return await _database
             .Table<Localidad>()
             .Where(l => l.Cve_Mun == cveMun)
@@ -226,8 +253,30 @@ public class DatabaseService
             .ToListAsync();
     }
 
-    public async Task<List<string>> GetNombresLocalidadesByCveMunAsync(String cveMun)
+    /*public async Task<List<string>> GetNombresLocalidadesByCveMunAsync(String cveMun)
     {
+        var lista = await _database.Table<Localidad>()
+            .Where(l => l.Cve_Mun == cveMun)
+            .OrderBy(l => l.LocalidadNombre)
+            .ToListAsync();
+
+        return lista
+            .Select(l => l.LocalidadNombre)
+            .ToList();
+    }*/
+    public async Task<List<string>> GetNombresLocalidadesByCveMunAsync(string cveMun)
+    {
+        
+
+
+        if (cveMun == "9999")
+        {
+            return new List<string>
+        {
+            "FUERA DEL ESTADO"
+        };
+        }
+
         var lista = await _database.Table<Localidad>()
             .Where(l => l.Cve_Mun == cveMun)
             .OrderBy(l => l.LocalidadNombre)
@@ -248,6 +297,15 @@ public class DatabaseService
             .Select(g => g.First())
             .OrderBy(x => x.Municipio)
             .ToList();
+        municipiosUnicos.Add(new CodigoPostalCat
+        {
+            Codigo = "00000",
+            Colonia = "FUERA DEL ESTADO",
+            Municipio = "FUERA DEL ESTADO",
+            cve_mun = "9999",
+            SeccionElectoral = "9999"
+        });
+
 
         return municipiosUnicos;
     }

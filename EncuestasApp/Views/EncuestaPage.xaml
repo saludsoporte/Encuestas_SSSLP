@@ -160,9 +160,9 @@
                 </Picker>
 
 
-                <!-->FIN DATOS DE LA PERSONA<-->
+                <!--FIN DATOS DE LA PERSONA<-->
 
-                <!-->DATOS DOMICILIO<-->
+                <!--DATOS DOMICILIO<-->
                 <Label Text="Código Postal *"/>
                 <Entry x:Name="CodigoPostalEntry"
        Placeholder="Código Postal"
@@ -227,22 +227,77 @@
                     <Label Text="No encuentro mi colonia"
            VerticalTextAlignment="Center" />
                 </HorizontalStackLayout>
-
+                <!--
                 <Entry x:Name="ColoniaManualEntry"
-       Placeholder="Escriba su colonia"
+       Placeholder="Escriba su colonia Ej. Balcones del Valle"
        IsVisible="False">
                     <Entry.Behaviors>
                         <behaviors:BloquearEmojisBehavior />
                     </Entry.Behaviors>
-                </Entry>
+                </Entry>-->
+                <!-- Colonia manual con icono de información -->
+                <Grid x:Name="ColoniaManualContainer"
+      IsVisible="False"
+      ColumnDefinitions="*,40"
+      VerticalOptions="Center"
+      Margin="0,5,0,0">
 
+                    <!-- Entry -->
+                    <Entry x:Name="ColoniaManualEntry" Placeholder="Escriba su colonia" Grid.Column="0">
+                        <Entry.Behaviors>
+                            <behaviors:BloquearEmojisBehavior />
+                        </Entry.Behaviors>
+                    </Entry>
 
+                    <Border Grid.Column="1" BackgroundColor="#E0E0E0" WidthRequest="24" HeightRequest="24" StrokeShape="RoundRectangle 12" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="i" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#333" />
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnColoniaInfoTapped"/>
+                        </Border.GestureRecognizers>
+
+                    </Border>
+                </Grid>
                 <Label Text="Calle *"/>
-                <Entry x:Name="CallenEntry" Placeholder="Calle *">
-                    <Entry.Behaviors>
-                        <behaviors:BloquearEmojisBehavior />
-                    </Entry.Behaviors>
-                </Entry>
+
+                <Grid ColumnDefinitions="*,40"
+      VerticalOptions="Center"
+      Margin="0,5,0,0">
+
+                    <!-- Entry Calle -->
+                    <Entry x:Name="CallenEntry"
+           Placeholder="Ej. Avenida Himno Nacional"
+           Grid.Column="0">
+
+                        <Entry.Behaviors>
+                            <behaviors:BloquearEmojisBehavior />
+                        </Entry.Behaviors>
+
+                    </Entry>
+
+                
+                    <Border Grid.Column="1"
+            BackgroundColor="#E0E0E0"
+            WidthRequest="24"
+            HeightRequest="24"
+            StrokeShape="RoundRectangle 12"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+
+                        <Label Text="i"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               TextColor="#333" />
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnCalleInfoTapped"/>
+                        </Border.GestureRecognizers>
+
+                    </Border>
+
+                </Grid>
+
                 <Label Text="No. Exterior *"/>
                 <Entry x:Name="NumExteriorEntry" Placeholder="Número exterior *" Keyboard="Numeric">
                     <Entry.Behaviors>
@@ -1013,12 +1068,55 @@
                         <x:String>No</x:String>
                     </Picker.Items>
                 </Picker>
-                <Label x:Name = "textEstanVacunadosEntry" Text = "¿Están vacunados y/o esterilizados?" IsVisible = "false" />
-                <Entry x:Name="EstanVacunadosEntry"  IsVisible="false" Placeholder="¿Están vacunados?">
-                    <Entry.Behaviors>
-                        <behaviors:BloquearEmojisBehavior />
-                    </Entry.Behaviors>
-                </Entry>
+                <!-- Bloque Vacunados / Esterilizados -->
+                <Grid x:Name="EstanVacunadosContainer"
+      IsVisible="False"
+      RowDefinitions="Auto,Auto"
+      ColumnDefinitions="*,40"
+      Margin="0,5,0,0">
+
+                    <!-- Label -->
+                    <Label x:Name="textEstanVacunadosEntry"
+           Text="¿Están vacunados y/o esterilizados?"
+           Grid.Row="0"
+           Grid.Column="0"
+           Grid.ColumnSpan="2" />
+
+                   
+                    <Entry x:Name="EstanVacunadosEntry"
+           Grid.Row="1"
+           Grid.Column="0"
+           Placeholder="Captura si estaán vacunados y/o esterilizados">
+
+                        <Entry.Behaviors>
+                            <behaviors:BloquearEmojisBehavior />
+                        </Entry.Behaviors>
+
+                    </Entry>
+
+               
+                    <Border Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="#E0E0E0"
+            WidthRequest="24"
+            HeightRequest="24"
+            StrokeShape="RoundRectangle 12"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+
+                        <Label Text="i"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               TextColor="#333" />
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnVacunasInfoTapped"/>
+                        </Border.GestureRecognizers>
+
+                    </Border>
+
+                </Grid>
 
 
                 <Label Text="5. Evaluación social y condiciones del entorno" FontAttributes="Bold" FontSize="18"/>

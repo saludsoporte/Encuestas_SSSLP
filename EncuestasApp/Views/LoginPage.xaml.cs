@@ -38,13 +38,13 @@ public partial class LoginPage : ContentPage
     //  Insertar usuario inicial si no existe
     private async Task SeedUsuarios()
     {//$_S@1u4App2@25
-        var existente = await _db.GetUsuarioAsync("administrador", "$_S@1u4App2@25");
+        var existente = await _db.GetUsuarioAsync("administrador", "S@1ud");
         if (existente == null)
         {
             await _db.SaveUsuarioAsync(new Usuario
             {
                 Username = "administrador",
-                Password = "$_S@1u4App2@25",
+                Password = "S@1ud",
                 NombreCompleto = "Administrador"
             });
         }
@@ -58,13 +58,13 @@ public partial class LoginPage : ContentPage
                 NombreCompleto = "Administrador"
             });
         }
-        existente = await _db.GetUsuarioAsync("administrador", "$_S@1u4App2@25");
+        existente = await _db.GetUsuarioAsync("administrador", "S@1ud");
         if (existente == null)
         {
             await _db.SaveUsuarioAsync(new Usuario
             {
                 Username = "administrador",
-                Password = "$_S@1u4App2@25",
+                Password = "S@1ud",
                 NombreCompleto = "Administrador"
             });
         }
