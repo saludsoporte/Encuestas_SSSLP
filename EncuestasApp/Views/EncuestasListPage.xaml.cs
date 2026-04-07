@@ -174,4 +174,9 @@ public partial class EncuestasListPage : ContentPage
         SyncOverlay.IsVisible = mostrar;
         SyncStatusLabel.Text = mensaje;
     }
+
+    private async void OnAddTapped(object sender, EventArgs e)
+    {
+       // await Navigation.PushAsync(new EncuestaPage());
+    }
 }

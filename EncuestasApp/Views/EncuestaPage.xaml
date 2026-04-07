@@ -20,7 +20,7 @@
         <!--<Grid >
 
                 <Image HorizontalOptions="Start" Source="franja2.png"  Aspect="AspectFill" HeightRequest="40"  />
-            </Grid>-->
+            </Grid-->
         <Label Text="HISTORIA CLÍNICA DOMICILIARIA - BRIGADA DE SALUD" FontAttributes="Bold" FontSize="18"/>
 
     </StackLayout>
@@ -30,7 +30,7 @@
             <VerticalStackLayout Padding="20" Spacing="15">
                 <Label Text="1. Datos Generales del Paciente" FontAttributes="Bold" FontSize="18"/>
                 <Line Stroke="#338C36" X2="{Binding Width, Source={RelativeSource Self}}" HorizontalOptions="Fill" StrokeThickness="3" />
-                <!-->DATOS DE LA PERSONA<-->
+                <!-->DATOS DE LA PERSONA-->
                 <Label Text="CURP *"/>
                 <Grid ColumnDefinitions="*,Auto" ColumnSpacing="5">
                     <Entry x:Name="CurpEntry" Placeholder="CURP" TextTransform="Uppercase" TextChanged="CurpEntry_TextChanged">

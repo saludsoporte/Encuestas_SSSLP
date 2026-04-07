@@ -103,6 +103,9 @@
 	  <MauiXaml Update="Popups\LocalidadPopup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\BottomNavBar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ConfiguracionPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

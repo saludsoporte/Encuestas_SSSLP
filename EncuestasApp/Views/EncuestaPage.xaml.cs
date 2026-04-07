@@ -54,9 +54,6 @@ public partial class EncuestaPage : ContentPage
         ConfigurarCalculoIMC();
     }
 
-    
-
-
     private List<ValidationResult> ValidarModelo(object modelo)
     {
         var contexto = new ValidationContext(modelo, null, null);

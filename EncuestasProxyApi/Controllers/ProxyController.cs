@@ -54,7 +54,7 @@ namespace EncuestasProxyApi.Controllers
                 // ✅ 1. Convertir el modelo a JSON legible
                 string jsonContent = JsonSerializer.Serialize(encuestas, new JsonSerializerOptions
                 {
-                    WriteIndented = true // para que se vea bonito
+                    WriteIndented = true 
                 });
 
                 // ✅ 2. Definir la ruta del archivo donde se guardará

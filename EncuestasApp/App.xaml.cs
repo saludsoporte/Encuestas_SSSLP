@@ -1,4 +1,5 @@
 ﻿using EncuestaApp.Views;
+using EncuestasApp;
 
 namespace EncuestaApp
 {
@@ -11,12 +12,14 @@ namespace EncuestaApp
             try
             {
                 InitializeComponent();
+            
                 Task.Run(async () =>
                 {
                     await db.InicializarCodigosPostalesAsync();
                     await db.CargarLocalidadesDesdeCsvAsync();
                 });
                 MainPage = new NavigationPage(new LoginPage(db));
+      
             }
             catch (Exception ex)
             {

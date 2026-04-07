@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EncuestaApp.Views.BottomNavBar">
+
+    <Grid ColumnDefinitions="*,*,80,*,*"
+          BackgroundColor="#1B5E20">
+
+        <!-- Home -->
+        <VerticalStackLayout Grid.Column="0"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="3">
+            <Image Source="icon_home.png"
+                   HeightRequest="24" WidthRequest="24"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="LabelHome"
+                   Text="Inicio" FontSize="10"
+                   TextColor="White"
+                   HorizontalOptions="Center"/>
+            <VerticalStackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnHomeTapped"/>
+            </VerticalStackLayout.GestureRecognizers>
+        </VerticalStackLayout>
+
+        <!-- Agenda -->
+        <VerticalStackLayout Grid.Column="1"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="3">
+            <Image Source="icon_calendar.png"
+                   HeightRequest="24" WidthRequest="24"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="LabelAgenda"
+                   Text="Agenda" FontSize="10"
+                   TextColor="White"
+                   HorizontalOptions="Center"/>
+            <VerticalStackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnAgendaTapped"/>
+            </VerticalStackLayout.GestureRecognizers>
+        </VerticalStackLayout>
+
+        <!-- Espacio botón + -->
+        <BoxView Grid.Column="2" Color="#1B5E20"/>
+
+        <!-- Sync -->
+        <VerticalStackLayout Grid.Column="3"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="3">
+            <Image Source="icon_sync.png"
+                   HeightRequest="24" WidthRequest="24"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="LabelSync"
+                   Text="Sync" FontSize="10"
+                   TextColor="White"
+                   HorizontalOptions="Center"/>
+            <VerticalStackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnSyncTapped"/>
+            </VerticalStackLayout.GestureRecognizers>
+        </VerticalStackLayout>
+
+        <!-- Perfil -->
+        <VerticalStackLayout Grid.Column="4"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="3">
+            <Image Source="icon_profile.png"
+                   HeightRequest="24" WidthRequest="24"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="LabelPerfil"
+                   Text="Perfil" FontSize="10"
+                   TextColor="White"
+                   HorizontalOptions="Center"/>
+            <VerticalStackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnPerfilTapped"/>
+            </VerticalStackLayout.GestureRecognizers>
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentView>

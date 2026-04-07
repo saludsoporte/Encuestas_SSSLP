@@ -16,15 +16,15 @@ public class AuthController : ControllerBase
     [HttpPost("login")]
     public IActionResult Login([FromBody] Usuario usuario)
     {
-        var user = _db.Usuarios.FirstOrDefault(u => u.Username == usuario.Username);
-        if (user == null || !BCrypt.Net.BCrypt.Verify(usuario.PasswordHash, user.PasswordHash))
+        var user = _db.Usuarios.FirstOrDefault(u => u.NombreUsuario == usuario.NombreUsuario);
+        if (user == null || !BCrypt.Net.BCrypt.Verify(usuario.Password, user.Password))
             return Unauthorized();
 
         var tokenHandler = new JwtSecurityTokenHandler();
         var key = Encoding.UTF8.GetBytes("supersecretkey12345");
         var token = tokenHandler.CreateToken(new SecurityTokenDescriptor
         {
-            Subject = new ClaimsIdentity(new[] { new Claim("id", user.Id.ToString()) }),
+            Subject = new ClaimsIdentity(new[] { new Claim("IdUsuario", user.IdUsuario.ToString()) }),
             Expires = DateTime.UtcNow.AddHours(12),
             SigningCredentials = new SigningCredentials(
                 new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
